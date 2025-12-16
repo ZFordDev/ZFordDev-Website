@@ -5,27 +5,28 @@
     "repo": "https://github.com/ZFordDev/SnapDock",
     "image": "/assets/pics/SnapDock.png",
     "badges": ["Flagship", "Productivity"],
-    "description": "A clean, fast, distraction-free Markdown reader with file-tree navigation, multi-file viewing, and a polished ZetoLabs UI. Designed for writers, developers, and students who want a simple, elegant workspace.",
+    "description": "A clean, fast Markdown reader built with pure JavaScript, HTML, and CSS. SnapDock provides a distraction‑free workspace with file-tree navigation, multi-file viewing, and a polished ZetoLabs interface.",
     "color": "indigo",
     "features": [
-      { "title": "File-Tree Navigation", "description": "Browse entire folders of Markdown files with a clean, responsive sidebar." },
-      { "title": "Multi-File Viewing", "description": "Open multiple documents at once and switch between them instantly." },
-      { "title": "Drag-and-Drop Support", "description": "Drop files or folders directly into SnapDock to load them instantly." },
-      { "title": "PDF Export (Planned)", "description": "Export Markdown documents to polished PDFs with one click." }
+      { "title": "File-Tree Navigation", "description": "Browse folders of Markdown files with a simple, responsive sidebar." },
+      { "title": "Multi-File Viewing", "description": "Open multiple documents and switch between them instantly." },
+      { "title": "Drag-and-Drop Support", "description": "Drop files or folders directly into SnapDock to load them immediately." },
+      { "title": "PDF Export (Planned)", "description": "Future support for exporting Markdown documents to clean, styled PDFs." }
     ],
-    "techStack": ["Electron", "TypeScript", "Tailwind CSS"],
+    "techStack": ["JavaScript", "HTML", "CSS"],
     "metadata": {
       "license": "MIT",
-      "version": "1.3.0",
+      "version": "2.0.1",
       "lastUpdated": "Dec 2025",
-      "platform": "Windows / macOS / Linux"
+      "platform": "Windows (current), Cross‑platform planned"
     },
-    "engineeringNotes": "SnapDock focuses on simplicity and clarity. No plugins, no clutter — just a clean Markdown workspace. Built with Electron for cross-platform support and Tailwind for a consistent ZetoLabs aesthetic.",
+    "engineeringNotes": "SnapDock is intentionally lightweight and dependency‑free, built with native web technologies for maximum clarity and maintainability. The UI follows ZetoLabs design principles: clean, minimal, and distraction‑free. Cross‑platform builds are planned once the underlying OS tooling is ready.",
     "roadmap": [
       { "status": "completed", "item": "Core Markdown viewer and file-tree" },
       { "status": "completed", "item": "Drag-and-drop folder loading" },
       { "status": "in-progress", "item": "PDF export engine" },
-      { "status": "planned", "item": "Multi-tab editing mode" }
+      { "status": "planned", "item": "Multi-tab editing mode" },
+      { "status": "planned", "item": "Cross-platform packaging" }
     ]
   },
 
@@ -65,57 +66,62 @@
     "repo": "https://github.com/ZFordDev/NestKey",
     "image": "/assets/pics/NestKey.png",
     "badges": ["Security", "Local-First"],
-    "description": "A privacy-focused, offline password vault designed for local-first credential storage. No cloud, no telemetry — just encrypted, auditable security.",
+    "description": "A lightweight, offline password vault built with pure JavaScript, HTML, and CSS. NestKey focuses on local-first security with no cloud storage, no telemetry, and full user control.",
     "color": "emerald",
     "features": [
-      { "title": "Local-Only Storage", "description": "All credentials stored offline. No cloud servers, no sync." },
-      { "title": "AES-256 Encryption", "description": "Industry-standard encryption for all vault data." },
-      { "title": "Master Password + Biometrics", "description": "Unlock your vault with a single password or OS-level biometrics." },
-      { "title": "Auto-Fill (Planned)", "description": "Browser extension for seamless login workflows." }
+      { "title": "Local-Only Storage", "description": "All credentials are stored offline on your device. No cloud sync, no external servers." },
+      { "title": "AES-256 Encryption", "description": "All vault data is encrypted using industry-standard AES-256." },
+      { "title": "Master Password Lock", "description": "Secure your vault with a single master password." },
+      { "title": "Auto-Fill (Planned)", "description": "Future browser extension for seamless login workflows." }
     ],
-    "techStack": ["Electron", "Rust", "SQLite", "TypeScript"],
+    "techStack": ["JavaScript", "HTML", "CSS"],
     "metadata": {
       "license": "MIT",
-      "version": "0.9.0-beta",
+      "version": "1.1.0",
       "lastUpdated": "Dec 2025",
-      "platform": "Windows / macOS"
+      "platform": "Windows (current), Cross-platform planned"
     },
-    "engineeringNotes": "Rust handles all cryptographic operations for maximum safety. SQLite provides a lightweight, local-first storage engine. Designed to be fully auditable and transparent.",
+    "engineeringNotes": "NestKey is intentionally simple and transparent, built with native web technologies for maximum auditability. Encryption is handled client-side, ensuring that sensitive data never leaves the user's machine. Cross-platform packaging will be added once OS tooling is ready.",
     "roadmap": [
       { "status": "completed", "item": "Core vault encryption" },
-      { "status": "in-progress", "item": "Browser extension" },
-      { "status": "planned", "item": "Security audit" },
-      { "status": "planned", "item": "Hardware key support" }
+      { "status": "completed", "item": "Master password system" },
+      { "status": "in-progress", "item": "UI polish and improved UX" },
+      { "status": "planned", "item": "Browser extension for auto-fill" },
+      { "status": "planned", "item": "Cross-platform packaging" }
     ]
   },
 
   {
     "slug": "thronebound",
-    "title": "Thronebound — Action RPG Prototype",
+    "title": "Thronebound — Kingdom‑Building Survival RTS (Concept)",
     "repo": "https://github.com/ZFordDev/Thronebound",
     "image": "/assets/pics/Thronebound.png",
-    "badges": ["Prototype", "Game Dev"],
-    "description": "A dark-fantasy action RPG prototype exploring combat feel, worldbuilding, and interactive narrative systems. Built as a long-term creative project.",
+    "badges": ["Concept", "Game Dev", "Rust"],
+    "description": "A first-person kingdom‑building survival RTS concept built around a single core rule: protect the throne at all costs. Thronebound blends voxel mining, villager automation, RTS combat, and age progression into a unified kingdom simulation.",
     "color": "rose",
     "features": [
-      { "title": "Real-Time Combat", "description": "Fast, responsive combat with combos, dodges, and enemy AI." },
-      { "title": "Procedural Environments", "description": "Hand-crafted worlds enhanced with procedural generation." },
-      { "title": "Branching Narrative", "description": "Player choices influence story direction and world state." },
-      { "title": "Skill Trees", "description": "Deep progression with interconnected abilities." }
+      { "title": "Throne‑Centric Gameplay", "description": "Your throne is your respawn, progression hub, and loss condition. Lose it, lose the kingdom." },
+      { "title": "First‑Person Kingdom Building", "description": "Gather resources, place buildings, and command villagers directly from ground level." },
+      { "title": "Villager Workforce System", "description": "Hire workers, builders, soldiers, and specialists to automate your economy and defend your realm." },
+      { "title": "Age Progression", "description": "Advance through multiple ages, unlocking new tech, units, and structures." },
+      { "title": "RTS Combat & Defense", "description": "Build armies, fortify walls, and defend your throne from raids, factions, and rival kingdoms." }
     ],
-    "techStack": ["Unreal Engine 5", "C++", "Blueprints"],
+    "techStack": ["Rust", "Bevy Engine", "ECS Architecture", "Voxel Systems (Planned)"],
     "metadata": {
       "license": "Proprietary",
-      "version": "0.3.0-alpha",
+      "version": "0.0.1-concept",
       "lastUpdated": "Dec 2025",
-      "platform": "PC"
+      "platform": "PC (Windows/Linux planned)"
     },
-    "engineeringNotes": "Focused on combat feel and player agency. Built in UE5 to explore next-gen rendering and gameplay systems.",
+    "engineeringNotes": "Thronebound is being designed from the ground up in Rust using the Bevy engine to ensure scalable AI, efficient ECS-driven simulation, and lightweight performance for large villager populations and RTS-scale battles. The project is currently in the concept and architecture phase, with voxel terrain, AI behavior trees, and throne progression systems planned.",
     "roadmap": [
-      { "status": "in-progress", "item": "Combat system" },
-      { "status": "in-progress", "item": "Enemy AI" },
-      { "status": "planned", "item": "Narrative foundation" },
-      { "status": "planned", "item": "Alpha playtest" }
+      { "status": "planned", "item": "Voxel terrain prototype" },
+      { "status": "planned", "item": "Player controller + basic gathering" },
+      { "status": "planned", "item": "Throne system (respawn, upgrades, ages)" },
+      { "status": "planned", "item": "Villager AI (workers, builders, soldiers)" },
+      { "status": "planned", "item": "RTS squad controls" },
+      { "status": "planned", "item": "Procedural world generation" },
+      { "status": "planned", "item": "Multiplayer sync model" }
     ]
   },
 
@@ -123,29 +129,42 @@
     "slug": "networking-systems",
     "title": "Networking & Systems — ZetoLabs Infrastructure",
     "repo": "/",
-    "image": "",
-    "badges": ["Infrastructure", "Internal"],
-    "description": "The homelab and internal infrastructure powering ZetoLabs: DNS, VPN, Kubernetes, monitoring, and automation.",
+    "image": "/assets/pics/infrastructure.png",
+    "badges": ["Infrastructure", "Internal", "Systems Engineering"],
+    "description": "The internal infrastructure powering ZetoLabs: secure networking, home‑lab servers, API tooling, and a disciplined deployment workflow designed for reliability, transparency, and future scalability.",
     "color": "cyan",
     "features": [
-      { "title": "Kubernetes Cluster", "description": "Self-hosted cluster for containerized workloads." },
-      { "title": "DNS & Security", "description": "PiHole filtering, WireGuard VPN, and zero-trust networking." },
-      { "title": "Infrastructure as Code", "description": "Terraform + Ansible for reproducible deployments." },
-      { "title": "Monitoring Stack", "description": "Prometheus, Grafana, and ELK for metrics and logs." }
+      { "title": "Secure Home‑Lab Architecture", "description": "Ubuntu 24.04 LTS servers running behind managed switches, custom firewall rules, and isolated virtual networks." },
+      { "title": "API & Internal Tooling (ZIA)", "description": "Local-first API services powering automation, client workflows, and internal dashboards." },
+      { "title": "Controlled Deployment Pipeline", "description": "Git → Syncthing → Server workflow ensuring only reviewed, approved files reach production." },
+      { "title": "Monitoring & Uptime", "description": "Uptime Kuma dashboards, Nginx health checks, and network isolation for reliability." },
+      { "title": "Future Production Model", "description": "Dedicated Git control machines + redundant hosting servers for scalable client deployments." }
     ],
-    "techStack": ["Kubernetes", "Docker", "Terraform", "Ansible", "WireGuard"],
+    "techStack": [
+      "Ubuntu Server 24.04 LTS",
+      "Nginx",
+      "Syncthing",
+      "Git",
+      "WireGuard",
+      "Managed Switches",
+      "Hyper‑V",
+      "ZIA API (Internal)"
+    ],
     "metadata": {
       "license": "Proprietary",
-      "version": "2.0",
+      "version": "1.0",
       "lastUpdated": "Dec 2025",
-      "platform": "Multi-node Linux cluster"
+      "platform": "Home‑Lab + Virtualized Linux Servers"
     },
-    "engineeringNotes": "Designed for reliability and disaster recovery. All infrastructure is version-controlled and automated.",
+    "engineeringNotes": "ZetoLabs infrastructure is built with a security‑first mindset: isolated networks, hardened SSH, strict firewall rules, and a controlled deployment pipeline. All systems are documented as credibility artifacts, ensuring repeatability and professional optics as the company scales.",
     "roadmap": [
-      { "status": "completed", "item": "Core cluster + DNS" },
-      { "status": "completed", "item": "Security layer" },
-      { "status": "in-progress", "item": "GitOps workflows" },
-      { "status": "planned", "item": "Multi-site failover" }
+      { "status": "completed", "item": "Ubuntu server deployment + hardened SSH" },
+      { "status": "completed", "item": "Git → Syncthing → Server workflow" },
+      { "status": "completed", "item": "Monitoring + uptime dashboard" },
+      { "status": "in-progress", "item": "ZIA API expansion for automation" },
+      { "status": "planned", "item": "Dedicated Git control machines" },
+      { "status": "planned", "item": "Redundant production servers" },
+      { "status": "planned", "item": "Multi‑site failover model" }
     ]
   }
 ]
