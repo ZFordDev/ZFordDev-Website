@@ -7,7 +7,7 @@ layout: layout.njk
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
     <!-- Breadcrumb -->
     <div class="flex items-center text-sm text-slate-500 mb-8">
-      <a href="{{ pathPrefix }}/" class="hover:text-indigo-400 transition-colors">Home</a>
+      <a href="/" class="hover:text-indigo-400 transition-colors">Home</a>
       <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
       <span class="text-slate-300">Artifacts</span>
     </div>
@@ -51,11 +51,11 @@ layout: layout.njk
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="artifacts-container">
       {% for artifact in artifacts %}
       <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="{% for badge in artifact.badges %}{{ badge }}{% if not loop.last %} {% endif %}{% endfor %}">
-        <a href="{{ pathPrefix }}/products/{{ artifact.slug }}/" class="block h-full">
+        <a href="/products/{{ artifact.slug }}/" class="block h-full">
           <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
             <div class="absolute inset-0 bg-grid opacity-10"></div>
             {% if artifact.image %}
-            <img src="{{ pathPrefix }}{{ artifact.image }}" alt="{{ artifact.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="{{ artifact.image }}" alt="{{ artifact.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             {% else %}
             <i data-lucide="package" class="w-12 h-12 text-slate-700"></i>
             {% endif %}
