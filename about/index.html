@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ZFordDev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom Utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex-shrink-0 cursor-pointer">
+                    <span class="text-2xl font-bold tracking-tighter text-white">ZFord<span class="text-indigo-400">Dev</span></span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Artifacts</a>
+                        <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Artifacts</a>
+                <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+<main class="flex-grow pt-24 pb-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Breadcrumb -->
+    <div class="flex items-center text-sm text-slate-500 mb-12">
+      <a href="/" class="hover:text-indigo-400 transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
+      <span class="text-slate-300">About</span>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="mb-16">
+      <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">About Me</h1>
+      <p class="text-xl text-slate-400 leading-relaxed">
+        I'm a builder obsessed with creating elegant solutions to complex problems. Every artifact you see here represents a journey through design, engineering, and the relentless pursuit of better systems.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div class="lg:col-span-2 space-y-12">
+        <!-- Who I Am -->
+        <section>
+          <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <i data-lucide="user" class="w-6 h-6 text-indigo-400"></i>
+            Who I Am
+          </h2>
+          <p class="text-slate-400 leading-relaxed mb-4">
+            I'm a full-stack engineer and product builder based at ZetoLabs. My work spans from low-level systems programming to high-level product design, always with an emphasis on local-first architectures and user agency.
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            I believe in building tools that respect user privacy, operate without cloud dependencies, and empower creators to extend and customize their workflows.
+          </p>
+        </section>
+
+        <!-- Philosophy -->
+        <section>
+          <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <i data-lucide="lightbulb" class="w-6 h-6 text-indigo-400"></i>
+            My Philosophy
+          </h2>
+          <div class="space-y-4">
+            <div class="p-6 rounded-lg bg-slate-900/50 border border-slate-800">
+              <h3 class="font-bold text-white mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                Artifact-Driven Development
+              </h3>
+              <p class="text-slate-400 text-sm">Each project is a tangible artifact—not just code, but a complete system designed to solve real problems for real users.</p>
+            </div>
+            <div class="p-6 rounded-lg bg-slate-900/50 border border-slate-800">
+              <h3 class="font-bold text-white mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                Local-First Architecture
+              </h3>
+              <p class="text-slate-400 text-sm">Privacy by design. Data lives on your machine. Your tools should work offline and sync when you choose.</p>
+            </div>
+            <div class="p-6 rounded-lg bg-slate-900/50 border border-slate-800">
+              <h3 class="font-bold text-white mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+                Modular Systems
+              </h3>
+              <p class="text-slate-400 text-sm">Software should be composable. Users and developers should be able to extend, modify, and reimagine systems without limitations.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+          <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <i data-lucide="code" class="w-6 h-6 text-indigo-400"></i>
+            What I Build
+          </h2>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            I work across the full spectrum of software development:
+          </p>
+          <ul class="space-y-3 text-slate-400">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+              <span><strong class="text-white">Desktop Applications</strong> — Electron and Tauri for cross-platform desktop tools</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+              <span><strong class="text-white">Systems Programming</strong> — Rust for performance-critical, secure systems</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+              <span><strong class="text-white">AI & Automation</strong> — Modular agents and workflow orchestration</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+              <span><strong class="text-white">Infrastructure</strong> — Kubernetes, networking, and homelab systems</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+              <span><strong class="text-white">Game Development</strong> — Unreal Engine and interactive experiences</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Why I Build -->
+        <section>
+          <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <i data-lucide="zap" class="w-6 h-6 text-indigo-400"></i>
+            Why I Build
+          </h2>
+          <p class="text-slate-400 leading-relaxed mb-4">
+            The world is full of tools that collect your data, require constant internet, and restrict what you can do. I build to change that.
+          </p>
+          <p class="text-slate-400 leading-relaxed mb-4">
+            Every artifact here is a statement: <em>"This is how software should be built."</em> Fast. Modular. Respectful. Extensible.
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            Whether you're using SnapDock to take notes, ZIA to augment your workflow with AI, NestKey to keep your passwords safe, or exploring Thronebound's world, you're using systems designed with you—not against you.
+          </p>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="space-y-8">
+        <!-- Quick Stats -->
+        <div class="glass-panel p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-6 flex items-center gap-2">
+            <i data-lucide="activity" class="w-4 h-4 text-cyan-400"></i>
+            By The Numbers
+          </h3>
+          <div class="space-y-4">
+            <div class="text-center py-3 border-b border-slate-700">
+              <p class="text-3xl font-bold text-indigo-400">5</p>
+              <p class="text-xs text-slate-500">Active Artifacts</p>
+            </div>
+            <div class="text-center py-3 border-b border-slate-700">
+              <p class="text-3xl font-bold text-purple-400">4</p>
+              <p class="text-xs text-slate-500">Languages in Use</p>
+            </div>
+            <div class="text-center py-3">
+              <p class="text-3xl font-bold text-emerald-400">∞</p>
+              <p class="text-xs text-slate-500">Ways to Improve</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Skills -->
+        <div class="glass-panel p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="cpu" class="w-4 h-4 text-purple-400"></i>
+            Core Skills
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Rust</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">TypeScript</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Python</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">React</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Kubernetes</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Systems Design</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Security</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">DevOps</span>
+          </div>
+        </div>
+
+        <!-- Connect -->
+        <div class="glass-panel p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="link" class="w-4 h-4 text-cyan-400"></i>
+            Let's Connect
+          </h3>
+          <div class="space-y-3">
+            <a href="https://github.com/ZFordDev" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span class="text-sm">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zachary-ford-009965393/" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+              <span class="text-sm">LinkedIn</span>
+            </a>
+            <a href="https://discord.gg/Kj8HayFrUV" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span class="text-sm">Discord</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61582975721747" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+              <span class="text-sm">Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">ZFord<span class="text-indigo-400">Dev</span></span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        Projects by <span class="text-indigo-300 font-semibold">ZetoLabs</span>.  
+                        © 2025 All Systems Operational.
+                    </p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="https://github.com/ZFordDev" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zachary-ford-009965393/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://discord.gg/Kj8HayFrUV" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Discord</span>
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61582975721747" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="mailto:zetolabs.au@gmail.com" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Email</span>
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-slate-950/90', 'backdrop-blur-md', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-slate-950/90', 'backdrop-blur-md', 'shadow-lg');
+            }
+        });
+    </script>
+
+    
+
+</body>
+</html>

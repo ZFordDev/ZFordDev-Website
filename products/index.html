@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifacts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom Utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex-shrink-0 cursor-pointer">
+                    <span class="text-2xl font-bold tracking-tighter text-white">ZFord<span class="text-indigo-400">Dev</span></span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Artifacts</a>
+                        <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Artifacts</a>
+                <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+<main class="flex-grow pt-24 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <!-- Breadcrumb -->
+    <div class="flex items-center text-sm text-slate-500 mb-8">
+      <a href="/" class="hover:text-indigo-400 transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
+      <span class="text-slate-300">Artifacts</span>
+    </div>
+
+    <!-- Header -->
+    <div class="mb-12">
+      <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">All Artifacts</h1>
+      <p class="text-xl text-slate-400">Explore all projects and systems built at ZetoLabs. Find what you're looking for with smart filtering.</p>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="mb-8 p-6 glass-panel rounded-xl">
+      <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
+        <div class="flex-1">
+          <label class="block text-sm font-medium text-slate-300 mb-2">Filter by Category</label>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="filterArtifacts('all')" class="px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium transition-all filter-btn active">
+              All Projects
+            </button>
+            <button onclick="filterArtifacts('Productivity')" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700 transition-all filter-btn">
+              Productivity
+            </button>
+            <button onclick="filterArtifacts('AI/ML')" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700 transition-all filter-btn">
+              AI/ML
+            </button>
+            <button onclick="filterArtifacts('Security')" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700 transition-all filter-btn">
+              Security
+            </button>
+            <button onclick="filterArtifacts('Infrastructure')" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700 transition-all filter-btn">
+              Infrastructure
+            </button>
+            <button onclick="filterArtifacts('Prototype')" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium hover:bg-slate-700 transition-all filter-btn">
+              Prototype
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artifacts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="artifacts-container">
+      
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Flagship Productivity">
+        <a href="/products/snapdock/" class="block h-full">
+          <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-grid opacity-10"></div>
+            
+            <img src="/assets/pics/SnapDock.png" alt="SnapDock — Markdown Workspace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
+            <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Flagship</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Productivity</span>
+              
+            </div>
+            
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">SnapDock — Markdown Workspace</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">A clean, fast, distraction-free Markdown reader with file-tree navigation, multi-file viewing, and a polished ZetoLabs UI. Designed for writers, developers, and students who want a simple, elegant workspace.</p>
+            
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-500">v1.3.0</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="AI/ML Prototype">
+        <a href="/products/zia/" class="block h-full">
+          <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-grid opacity-10"></div>
+            
+            <img src="/assets/pics/ZIA.png" alt="ZIA — Modular AI Assistant Framework" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
+            <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">AI/ML</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Prototype</span>
+              
+            </div>
+            
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">ZIA — Modular AI Assistant Framework</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">A proof-of-concept modular AI assistant that connects Slack, Discord, and a web interface to local or external AI models. Built to explore persona switching, persistent memory, and multi‑platform routing.</p>
+            
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-500">v0.4.0</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Security Local-First">
+        <a href="/products/nestkey/" class="block h-full">
+          <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-grid opacity-10"></div>
+            
+            <img src="/assets/pics/NestKey.png" alt="NestKey — Secure Password Vault" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
+            <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Security</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Local-First</span>
+              
+            </div>
+            
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">NestKey — Secure Password Vault</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">A privacy-focused, offline password vault designed for local-first credential storage. No cloud, no telemetry — just encrypted, auditable security.</p>
+            
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-500">v0.9.0-beta</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Prototype Game Dev">
+        <a href="/products/thronebound/" class="block h-full">
+          <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-grid opacity-10"></div>
+            
+            <img src="/assets/pics/Thronebound.png" alt="Thronebound — Action RPG Prototype" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
+            <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Prototype</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Game Dev</span>
+              
+            </div>
+            
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Thronebound — Action RPG Prototype</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">A dark-fantasy action RPG prototype exploring combat feel, worldbuilding, and interactive narrative systems. Built as a long-term creative project.</p>
+            
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-500">v0.3.0-alpha</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Infrastructure Internal">
+        <a href="/products/networking-systems/" class="block h-full">
+          <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-grid opacity-10"></div>
+            
+            <i data-lucide="package" class="w-12 h-12 text-slate-700"></i>
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
+            <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Infrastructure</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Internal</span>
+              
+            </div>
+            
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Networking &amp; Systems — ZetoLabs Infrastructure</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">The homelab and internal infrastructure powering ZetoLabs: DNS, VPN, Kubernetes, monitoring, and automation.</p>
+            
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-500">v2.0</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+
+    <!-- No Results -->
+    <div id="no-results" class="hidden text-center py-12">
+      <i data-lucide="inbox" class="w-16 h-16 text-slate-700 mx-auto mb-4"></i>
+      <p class="text-slate-400 text-lg">No artifacts match this filter. Try another category.</p>
+    </div>
+  </div>
+</main>
+
+<script>
+  function filterArtifacts(category) {
+    const cards = document.querySelectorAll('.artifact-card');
+    const noResults = document.getElementById('no-results');
+    let visibleCount = 0;
+
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.classList.remove('bg-indigo-600', 'text-white');
+      btn.classList.add('bg-slate-800', 'text-slate-300');
+    });
+    event.target.classList.add('bg-indigo-600', 'text-white');
+    event.target.classList.remove('bg-slate-800', 'text-slate-300');
+
+    // Filter cards
+    cards.forEach(card => {
+      const cardCategories = card.dataset.category;
+      if (category === 'all' || cardCategories.includes(category)) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Show/hide no results message
+    noResults.classList.toggle('hidden', visibleCount > 0);
+  }
+
+  // Initialize lucide icons
+  lucide.createIcons();
+</script>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">ZFord<span class="text-indigo-400">Dev</span></span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        Projects by <span class="text-indigo-300 font-semibold">ZetoLabs</span>.  
+                        © 2025 All Systems Operational.
+                    </p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="https://github.com/ZFordDev" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zachary-ford-009965393/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://discord.gg/Kj8HayFrUV" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Discord</span>
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61582975721747" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="mailto:zetolabs.au@gmail.com" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Email</span>
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-slate-950/90', 'backdrop-blur-md', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-slate-950/90', 'backdrop-blur-md', 'shadow-lg');
+            }
+        });
+    </script>
+
+    
+
+</body>
+</html>
