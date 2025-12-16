@@ -1,0 +1,151 @@
+[
+  {
+    "slug": "snapdock",
+    "title": "SnapDock — Markdown Workspace",
+    "repo": "https://github.com/ZFordDev/SnapDock",
+    "image": "/assets/pics/SnapDock.png",
+    "badges": ["Flagship", "Productivity"],
+    "description": "A clean, fast, distraction-free Markdown reader with file-tree navigation, multi-file viewing, and a polished ZetoLabs UI. Designed for writers, developers, and students who want a simple, elegant workspace.",
+    "color": "indigo",
+    "features": [
+      { "title": "File-Tree Navigation", "description": "Browse entire folders of Markdown files with a clean, responsive sidebar." },
+      { "title": "Multi-File Viewing", "description": "Open multiple documents at once and switch between them instantly." },
+      { "title": "Drag-and-Drop Support", "description": "Drop files or folders directly into SnapDock to load them instantly." },
+      { "title": "PDF Export (Planned)", "description": "Export Markdown documents to polished PDFs with one click." }
+    ],
+    "techStack": ["Electron", "TypeScript", "Tailwind CSS"],
+    "metadata": {
+      "license": "MIT",
+      "version": "1.3.0",
+      "lastUpdated": "Dec 2025",
+      "platform": "Windows / macOS / Linux"
+    },
+    "engineeringNotes": "SnapDock focuses on simplicity and clarity. No plugins, no clutter — just a clean Markdown workspace. Built with Electron for cross-platform support and Tailwind for a consistent ZetoLabs aesthetic.",
+    "roadmap": [
+      { "status": "completed", "item": "Core Markdown viewer and file-tree" },
+      { "status": "completed", "item": "Drag-and-drop folder loading" },
+      { "status": "in-progress", "item": "PDF export engine" },
+      { "status": "planned", "item": "Multi-tab editing mode" }
+    ]
+  },
+
+  {
+    "slug": "zia",
+    "title": "ZIA — Modular AI Assistant Framework",
+    "repo": "https://github.com/ZFordDev/ZIA",
+    "image": "/assets/pics/ZIA.png",
+    "badges": ["AI/ML", "Prototype"],
+    "description": "A proof-of-concept modular AI assistant that connects Slack, Discord, and a web interface to local or external AI models. Built to explore persona switching, persistent memory, and multi‑platform routing.",
+    "color": "purple",
+    "features": [
+      { "title": "Slack & Discord Handlers", "description": "Unified message routing across multiple chat platforms." },
+      { "title": "Persona Templates", "description": "Switch between conversation styles using JSON-based persona configs." },
+      { "title": "Persistent Memory", "description": "Per-channel JSON memory storage with no database required." },
+      { "title": "Config-Driven Setup", "description": "All behavior controlled through JSON files — no code edits needed." }
+    ],
+    "techStack": ["Python", "FastAPI", "WebSockets"],
+    "metadata": {
+      "license": "MIT",
+      "version": "0.4.0",
+      "lastUpdated": "Dec 2025",
+      "platform": "Cross-platform"
+    },
+    "engineeringNotes": "ZIA is intentionally raw — a prototype that laid the groundwork for ZetoAI. It demonstrates routing, persona switching, and memory, but is not intended as a polished product.",
+    "roadmap": [
+      { "status": "completed", "item": "Slack + Discord integration" },
+      { "status": "completed", "item": "Persona system" },
+      { "status": "in-progress", "item": "Web handler improvements" },
+      { "status": "planned", "item": "Offline docs loader" }
+    ]
+  },
+
+  {
+    "slug": "nestkey",
+    "title": "NestKey — Secure Password Vault",
+    "repo": "https://github.com/ZFordDev/NestKey",
+    "image": "/assets/pics/NestKey.png",
+    "badges": ["Security", "Local-First"],
+    "description": "A privacy-focused, offline password vault designed for local-first credential storage. No cloud, no telemetry — just encrypted, auditable security.",
+    "color": "emerald",
+    "features": [
+      { "title": "Local-Only Storage", "description": "All credentials stored offline. No cloud servers, no sync." },
+      { "title": "AES-256 Encryption", "description": "Industry-standard encryption for all vault data." },
+      { "title": "Master Password + Biometrics", "description": "Unlock your vault with a single password or OS-level biometrics." },
+      { "title": "Auto-Fill (Planned)", "description": "Browser extension for seamless login workflows." }
+    ],
+    "techStack": ["Electron", "Rust", "SQLite", "TypeScript"],
+    "metadata": {
+      "license": "MIT",
+      "version": "0.9.0-beta",
+      "lastUpdated": "Dec 2025",
+      "platform": "Windows / macOS"
+    },
+    "engineeringNotes": "Rust handles all cryptographic operations for maximum safety. SQLite provides a lightweight, local-first storage engine. Designed to be fully auditable and transparent.",
+    "roadmap": [
+      { "status": "completed", "item": "Core vault encryption" },
+      { "status": "in-progress", "item": "Browser extension" },
+      { "status": "planned", "item": "Security audit" },
+      { "status": "planned", "item": "Hardware key support" }
+    ]
+  },
+
+  {
+    "slug": "thronebound",
+    "title": "Thronebound — Action RPG Prototype",
+    "repo": "https://github.com/ZFordDev/Thronebound",
+    "image": "/assets/pics/Thronebound.png",
+    "badges": ["Prototype", "Game Dev"],
+    "description": "A dark-fantasy action RPG prototype exploring combat feel, worldbuilding, and interactive narrative systems. Built as a long-term creative project.",
+    "color": "rose",
+    "features": [
+      { "title": "Real-Time Combat", "description": "Fast, responsive combat with combos, dodges, and enemy AI." },
+      { "title": "Procedural Environments", "description": "Hand-crafted worlds enhanced with procedural generation." },
+      { "title": "Branching Narrative", "description": "Player choices influence story direction and world state." },
+      { "title": "Skill Trees", "description": "Deep progression with interconnected abilities." }
+    ],
+    "techStack": ["Unreal Engine 5", "C++", "Blueprints"],
+    "metadata": {
+      "license": "Proprietary",
+      "version": "0.3.0-alpha",
+      "lastUpdated": "Dec 2025",
+      "platform": "PC"
+    },
+    "engineeringNotes": "Focused on combat feel and player agency. Built in UE5 to explore next-gen rendering and gameplay systems.",
+    "roadmap": [
+      { "status": "in-progress", "item": "Combat system" },
+      { "status": "in-progress", "item": "Enemy AI" },
+      { "status": "planned", "item": "Narrative foundation" },
+      { "status": "planned", "item": "Alpha playtest" }
+    ]
+  },
+
+  {
+    "slug": "networking-systems",
+    "title": "Networking & Systems — ZetoLabs Infrastructure",
+    "repo": "/",
+    "image": "",
+    "badges": ["Infrastructure", "Internal"],
+    "description": "The homelab and internal infrastructure powering ZetoLabs: DNS, VPN, Kubernetes, monitoring, and automation.",
+    "color": "cyan",
+    "features": [
+      { "title": "Kubernetes Cluster", "description": "Self-hosted cluster for containerized workloads." },
+      { "title": "DNS & Security", "description": "PiHole filtering, WireGuard VPN, and zero-trust networking." },
+      { "title": "Infrastructure as Code", "description": "Terraform + Ansible for reproducible deployments." },
+      { "title": "Monitoring Stack", "description": "Prometheus, Grafana, and ELK for metrics and logs." }
+    ],
+    "techStack": ["Kubernetes", "Docker", "Terraform", "Ansible", "WireGuard"],
+    "metadata": {
+      "license": "Proprietary",
+      "version": "2.0",
+      "lastUpdated": "Dec 2025",
+      "platform": "Multi-node Linux cluster"
+    },
+    "engineeringNotes": "Designed for reliability and disaster recovery. All infrastructure is version-controlled and automated.",
+    "roadmap": [
+      { "status": "completed", "item": "Core cluster + DNS" },
+      { "status": "completed", "item": "Security layer" },
+      { "status": "in-progress", "item": "GitOps workflows" },
+      { "status": "planned", "item": "Multi-site failover" }
+    ]
+  }
+]
