@@ -89,9 +89,11 @@
           
           <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">Internal</span>
           
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">Systems Engineering</span>
+          
         </div>
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Networking &amp; Systems — ZetoLabs Infrastructure</h1>
-        <p class="text-xl text-slate-400 max-w-3xl">The homelab and internal infrastructure powering ZetoLabs: DNS, VPN, Kubernetes, monitoring, and automation.</p>
+        <p class="text-xl text-slate-400 max-w-3xl">The internal infrastructure powering ZetoLabs: secure networking, home‑lab servers, API tooling, and a disciplined deployment workflow designed for reliability, transparency, and future scalability.</p>
       </div>
       <div class="flex gap-4 mt-4 md:mt-0">
           
@@ -111,7 +113,7 @@
         <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center group relative">
           <div class="absolute inset-0 bg-grid opacity-20"></div>
           
-          <i data-lucide="image" class="w-16 h-16 text-slate-700"></i>
+          <img src="/assets/pics/infrastructure.png" alt="Networking &amp; Systems — ZetoLabs Infrastructure screenshot" class="w-full h-full object-cover opacity-90">
           
           <div class="absolute inset-0 bg-black/20"></div>
         </div>
@@ -123,23 +125,28 @@
           <div class="grid sm:grid-cols-2 gap-6">
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <h3 class="font-bold text-white mb-2">Kubernetes Cluster</h3>
-              <p class="text-slate-400 text-sm">Self-hosted cluster for containerized workloads.</p>
+              <h3 class="font-bold text-white mb-2">Secure Home‑Lab Architecture</h3>
+              <p class="text-slate-400 text-sm">Ubuntu 24.04 LTS servers running behind managed switches, custom firewall rules, and isolated virtual networks.</p>
             </div>
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <h3 class="font-bold text-white mb-2">DNS &amp; Security</h3>
-              <p class="text-slate-400 text-sm">PiHole filtering, WireGuard VPN, and zero-trust networking.</p>
+              <h3 class="font-bold text-white mb-2">API &amp; Internal Tooling (ZIA)</h3>
+              <p class="text-slate-400 text-sm">Local-first API services powering automation, client workflows, and internal dashboards.</p>
             </div>
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <h3 class="font-bold text-white mb-2">Infrastructure as Code</h3>
-              <p class="text-slate-400 text-sm">Terraform + Ansible for reproducible deployments.</p>
+              <h3 class="font-bold text-white mb-2">Controlled Deployment Pipeline</h3>
+              <p class="text-slate-400 text-sm">Git → Syncthing → Server workflow ensuring only reviewed, approved files reach production.</p>
             </div>
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <h3 class="font-bold text-white mb-2">Monitoring Stack</h3>
-              <p class="text-slate-400 text-sm">Prometheus, Grafana, and ELK for metrics and logs.</p>
+              <h3 class="font-bold text-white mb-2">Monitoring &amp; Uptime</h3>
+              <p class="text-slate-400 text-sm">Uptime Kuma dashboards, Nginx health checks, and network isolation for reliability.</p>
+            </div>
+            
+            <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
+              <h3 class="font-bold text-white mb-2">Future Production Model</h3>
+              <p class="text-slate-400 text-sm">Dedicated Git control machines + redundant hosting servers for scalable client deployments.</p>
             </div>
             
           </div>
@@ -147,7 +154,7 @@
 
         <div class="prose prose-invert prose-slate max-w-none">
           <h3 class="text-xl font-bold text-white mb-4">Engineering Notes</h3>
-          <p class="text-slate-400 leading-relaxed">Designed for reliability and disaster recovery. All infrastructure is version-controlled and automated.</p>
+          <p class="text-slate-400 leading-relaxed">ZetoLabs infrastructure is built with a security‑first mindset: isolated networks, hardened SSH, strict firewall rules, and a controlled deployment pipeline. All systems are documented as credibility artifacts, ensuring repeatability and professional optics as the company scales.</p>
         </div>
       </div>
 
@@ -158,15 +165,21 @@
           </h3>
           <div class="flex flex-wrap gap-2">
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Kubernetes</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Ubuntu Server 24.04 LTS</span>
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Docker</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Nginx</span>
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Terraform</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Syncthing</span>
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Ansible</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Git</span>
             
             <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">WireGuard</span>
+            
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Managed Switches</span>
+            
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Hyper‑V</span>
+            
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">ZIA API (Internal)</span>
             
           </div>
         </div>
@@ -178,7 +191,7 @@
           </div>
           <div class="flex justify-between items-center border-b border-slate-700 pb-3">
             <span class="text-slate-400 text-sm">Version</span>
-            <span class="text-white text-sm font-medium">2.0</span>
+            <span class="text-white text-sm font-medium">1.0</span>
           </div>
           <div class="flex justify-between items-center border-b border-slate-700 pb-3">
             <span class="text-slate-400 text-sm">Last Updated</span>
@@ -186,7 +199,7 @@
           </div>
           <div class="flex justify-between items-center">
             <span class="text-slate-400 text-sm">Platform</span>
-            <span class="text-white text-sm font-medium">Multi-node Linux cluster</span>
+            <span class="text-white text-sm font-medium">Home‑Lab + Virtualized Linux Servers</span>
           </div>
         </div>
 
@@ -203,7 +216,7 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Core cluster + DNS</p>
+                <p class="text-slate-300 text-sm">Ubuntu server deployment + hardened SSH</p>
                 <span class="text-xs text-slate-500 capitalize">completed</span>
               </div>
             </div>
@@ -215,7 +228,19 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Security layer</p>
+                <p class="text-slate-300 text-sm">Git → Syncthing → Server workflow</p>
+                <span class="text-xs text-slate-500 capitalize">completed</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">Monitoring + uptime dashboard</p>
                 <span class="text-xs text-slate-500 capitalize">completed</span>
               </div>
             </div>
@@ -227,7 +252,7 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">GitOps workflows</p>
+                <p class="text-slate-300 text-sm">ZIA API expansion for automation</p>
                 <span class="text-xs text-slate-500 capitalize">in-progress</span>
               </div>
             </div>
@@ -239,7 +264,31 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Multi-site failover</p>
+                <p class="text-slate-300 text-sm">Dedicated Git control machines</p>
+                <span class="text-xs text-slate-500 capitalize">planned</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
+                <i data-lucide="circle" class="w-4 h-4 text-slate-600"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">Redundant production servers</p>
+                <span class="text-xs text-slate-500 capitalize">planned</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
+                <i data-lucide="circle" class="w-4 h-4 text-slate-600"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">Multi‑site failover model</p>
                 <span class="text-xs text-slate-500 capitalize">planned</span>
               </div>
             </div>

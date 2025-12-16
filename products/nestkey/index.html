@@ -91,7 +91,7 @@
           
         </div>
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">NestKey — Secure Password Vault</h1>
-        <p class="text-xl text-slate-400 max-w-3xl">A privacy-focused, offline password vault designed for local-first credential storage. No cloud, no telemetry — just encrypted, auditable security.</p>
+        <p class="text-xl text-slate-400 max-w-3xl">A lightweight, offline password vault built with pure JavaScript, HTML, and CSS. NestKey focuses on local-first security with no cloud storage, no telemetry, and full user control.</p>
       </div>
       <div class="flex gap-4 mt-4 md:mt-0">
           
@@ -124,22 +124,22 @@
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
               <h3 class="font-bold text-white mb-2">Local-Only Storage</h3>
-              <p class="text-slate-400 text-sm">All credentials stored offline. No cloud servers, no sync.</p>
+              <p class="text-slate-400 text-sm">All credentials are stored offline on your device. No cloud sync, no external servers.</p>
             </div>
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
               <h3 class="font-bold text-white mb-2">AES-256 Encryption</h3>
-              <p class="text-slate-400 text-sm">Industry-standard encryption for all vault data.</p>
+              <p class="text-slate-400 text-sm">All vault data is encrypted using industry-standard AES-256.</p>
             </div>
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <h3 class="font-bold text-white mb-2">Master Password + Biometrics</h3>
-              <p class="text-slate-400 text-sm">Unlock your vault with a single password or OS-level biometrics.</p>
+              <h3 class="font-bold text-white mb-2">Master Password Lock</h3>
+              <p class="text-slate-400 text-sm">Secure your vault with a single master password.</p>
             </div>
             
             <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
               <h3 class="font-bold text-white mb-2">Auto-Fill (Planned)</h3>
-              <p class="text-slate-400 text-sm">Browser extension for seamless login workflows.</p>
+              <p class="text-slate-400 text-sm">Future browser extension for seamless login workflows.</p>
             </div>
             
           </div>
@@ -147,7 +147,7 @@
 
         <div class="prose prose-invert prose-slate max-w-none">
           <h3 class="text-xl font-bold text-white mb-4">Engineering Notes</h3>
-          <p class="text-slate-400 leading-relaxed">Rust handles all cryptographic operations for maximum safety. SQLite provides a lightweight, local-first storage engine. Designed to be fully auditable and transparent.</p>
+          <p class="text-slate-400 leading-relaxed">NestKey is intentionally simple and transparent, built with native web technologies for maximum auditability. Encryption is handled client-side, ensuring that sensitive data never leaves the user&#39;s machine. Cross-platform packaging will be added once OS tooling is ready.</p>
         </div>
       </div>
 
@@ -158,13 +158,11 @@
           </h3>
           <div class="flex flex-wrap gap-2">
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Electron</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">JavaScript</span>
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Rust</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">HTML</span>
             
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">SQLite</span>
-            
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">TypeScript</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">CSS</span>
             
           </div>
         </div>
@@ -176,7 +174,7 @@
           </div>
           <div class="flex justify-between items-center border-b border-slate-700 pb-3">
             <span class="text-slate-400 text-sm">Version</span>
-            <span class="text-white text-sm font-medium">0.9.0-beta</span>
+            <span class="text-white text-sm font-medium">1.1.0</span>
           </div>
           <div class="flex justify-between items-center border-b border-slate-700 pb-3">
             <span class="text-slate-400 text-sm">Last Updated</span>
@@ -184,7 +182,7 @@
           </div>
           <div class="flex justify-between items-center">
             <span class="text-slate-400 text-sm">Platform</span>
-            <span class="text-white text-sm font-medium">Windows / macOS</span>
+            <span class="text-white text-sm font-medium">Windows (current), Cross-platform planned</span>
           </div>
         </div>
 
@@ -209,11 +207,23 @@
             <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
               <div class="mt-1">
                 
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">Master password system</p>
+                <span class="text-xs text-slate-500 capitalize">completed</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
                 <i data-lucide="circle" class="w-4 h-4 text-yellow-400"></i>
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Browser extension</p>
+                <p class="text-slate-300 text-sm">UI polish and improved UX</p>
                 <span class="text-xs text-slate-500 capitalize">in-progress</span>
               </div>
             </div>
@@ -225,7 +235,7 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Security audit</p>
+                <p class="text-slate-300 text-sm">Browser extension for auto-fill</p>
                 <span class="text-xs text-slate-500 capitalize">planned</span>
               </div>
             </div>
@@ -237,7 +247,7 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Hardware key support</p>
+                <p class="text-slate-300 text-sm">Cross-platform packaging</p>
                 <span class="text-xs text-slate-500 capitalize">planned</span>
               </div>
             </div>
