@@ -55,7 +55,7 @@ layout: layout.njk
           <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
             <div class="absolute inset-0 bg-grid opacity-10"></div>
             {% if artifact.image %}
-            <img src="{{ artifact.image }}" alt="{{ artifact.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="{{ pathPrefix }}{{ artifact.image }}" alt="{{ artifact.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             {% else %}
             <i data-lucide="package" class="w-12 h-12 text-slate-700"></i>
             {% endif %}
