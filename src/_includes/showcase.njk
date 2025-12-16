@@ -17,7 +17,7 @@
 
         <div id="carousel" class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-8">
             {% for a in artifacts %}
-            <a href="/products/{{ a.slug }}/" class="min-w-[85vw] md:min-w-[400px] snap-center block group">
+            <a href="{{ pathPrefix }}/products/{{ a.slug }}/" class="min-w-[85vw] md:min-w-[400px] snap-center block group">
                 <div class="glass-panel rounded-2xl p-1 h-full hover:border-{{ a.color }}-500/50 transition-colors duration-300">
                     <div class="bg-slate-950 rounded-xl overflow-hidden h-full flex flex-col relative">
                         <div class="h-48 bg-slate-900 rounded-t-xl overflow-hidden relative group-hover:scale-105 transition-transform duration-500">

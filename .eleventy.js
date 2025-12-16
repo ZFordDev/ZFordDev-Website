@@ -1,14 +1,13 @@
 module.exports = function(eleventyConfig) {
-  // Correct: copy assets from inside src/
-  eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   return {
+    pathPrefix: "/ZFordDev-Website/",
     dir: {
       input: "src",
       includes: "_includes",
       data: "_data",
       output: "_site"
-    },
-    passthroughFileCopy: true
+    }
   };
 };

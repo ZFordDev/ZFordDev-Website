@@ -12,9 +12,9 @@ title: "{{ artifact.title }}"
 <main class="flex-grow pt-24 pb-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
     <div class="flex items-center text-sm text-slate-500 mb-6">
-      <a href="/" class="hover:text-indigo-400 transition-colors">Home</a>
+      <a href="{{ pathPrefix }}/" class="hover:text-indigo-400 transition-colors">Home</a>
       <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
-      <a href="/products/" class="hover:text-indigo-400 transition-colors">Products</a>
+      <a href="{{ pathPrefix }}/products/" class="hover:text-indigo-400 transition-colors">Products</a>
       <i data-lucide="chevron-right" class="w-4 h-4 mx-2"></i>
       <span class="text-slate-300">{{ artifact.title }}</span>
     </div>
