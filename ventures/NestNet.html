@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestNet | Sovereign Infrastructure & Edge Compute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --amber-glow: #ffb300;
+            --void: #08080a;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--void);
+            color: #d1d5db;
+            background-image: 
+                radial-gradient(circle at 2px 2px, rgba(255,255,255,0.02) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .amber-text { color: var(--amber-glow); text-shadow: 0 0 15px rgba(255, 179, 0, 0.3); }
+        .server-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+        .server-card:hover {
+            border-color: var(--amber-glow);
+            background: rgba(255, 179, 0, 0.02);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <nav class="flex justify-between items-center px-10 py-8 border-b border-white/5">
+        <div class="flex items-center gap-4">
+            <div class="w-10 h-10 border-2 border-[#ffb300] flex items-center justify-center rotate-45">
+                <span class="text-[#ffb300] font-bold -rotate-45 text-lg">N</span>
+            </div>
+            <div>
+                <span class="text-xl font-bold tracking-tighter text-white">NESTNET</span>
+                <p class="text-[10px] mono text-zinc-500 uppercase tracking-[0.2em]">Core Infrastructure</p>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-10 text-[11px] mono uppercase tracking-widest text-zinc-400">
+            <a href="#compute" class="hover:text-[#ffb300] transition-colors">Edge Compute</a>
+            <a href="#storage" class="hover:text-[#ffb300] transition-colors">Sovereign Storage</a>
+            <a href="#backbone" class="hover:text-[#ffb300] transition-colors">The Backbone</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-10 py-24">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <div class="inline-flex items-center px-3 py-1 mb-8 border border-zinc-800 rounded text-[10px] mono text-zinc-500 uppercase">
+                    <span class="status-dot bg-amber-500 animate-pulse"></span>
+                    Network Node 01: Active
+                </div>
+                <h1 class="text-6xl lg:text-8xl font-bold text-white tracking-tighter leading-none mb-8">
+                    THE <span class="amber-text">IRON</span> <br>BACKBONE.
+                </h1>
+                <p class="text-xl text-zinc-400 font-light leading-relaxed mb-10 max-w-lg">
+                    NestNet is the physical reality of the ARC Group ecosystem. We build and maintain the sovereign server clusters that power our AI routing, documentation tools, and secure vaults.
+                </p>
+                <div class="flex gap-6">
+                    <button class="px-8 py-4 bg-[#ffb300] text-black font-bold rounded-sm hover:bg-white transition-colors">Provision Instance</button>
+                    <button class="px-8 py-4 border border-zinc-700 text-white font-bold rounded-sm hover:border-white transition-colors italic">Network Specs</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="server-card p-6 rounded-lg">
+                    <p class="mono text-[10px] text-zinc-600 mb-4 uppercase">Node Alpha</p>
+                    <div class="h-1 w-full bg-zinc-900 mb-4 overflow-hidden">
+                        <div class="h-full bg-amber-500 w-[65%]"></div>
+                    </div>
+                    <p class="text-xs text-zinc-400 mono">Load: 65.2%</p>
+                </div>
+                <div class="server-card p-6 rounded-lg">
+                    <p class="mono text-[10px] text-zinc-600 mb-4 uppercase">Node Beta</p>
+                    <div class="h-1 w-full bg-zinc-900 mb-4 overflow-hidden">
+                        <div class="h-full bg-amber-500 w-[42%]"></div>
+                    </div>
+                    <p class="text-xs text-zinc-400 mono">Load: 42.1%</p>
+                </div>
+                <div class="server-card p-10 col-span-2 rounded-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4">
+                        <svg class="w-6 h-6 text-zinc-800" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.45l8.27 14.3H3.73L12 5.45z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Sovereign Edge</h3>
+                    <p class="text-sm text-zinc-500 leading-relaxed">Dedicated clusters for ALX AI routing. Local hardware, zero third-party telemetry.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verticals -->
+        <div class="grid md:grid-cols-3 gap-12 mt-32 border-t border-zinc-900 pt-20">
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">01. Hardware Layer</h4>
+                <p class="text-sm text-zinc-500 leading-relaxed">Custom-built server rack solutions optimized for LLM inference and high-density local storage.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">02. The Mesh</h4>
+                <p class="text-sm text-zinc-500 leading-relaxed">An encrypted internal network bridging NestKey security with ALX intelligence. One private ecosystem.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">03. Expansion</h4>
+                <p class="text-sm text-zinc-500 leading-relaxed">Currently provisioning dedicated space for sovereign Australian cloud operations. Coming Q3 2025.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-10 border-t border-zinc-900 mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-4 opacity-50">
+                <div class="w-6 h-6 border border-white flex items-center justify-center rotate-45">
+                    <span class="text-[10px] -rotate-45">N</span>
+                </div>
+                <span class="text-xs mono uppercase tracking-widest">NESTNET INFRASTRUCTURE</span>
+            </div>
+            <div class="text-[10px] mono text-zinc-600 uppercase tracking-widest text-center">
+                Operating under ARC GROUP PTY LTD • [INTERNAL NETWORK USE ONLY]
+            </div>
+            <div class="text-xs text-zinc-500 italic">
+                Sovereign. Secure. Solid.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

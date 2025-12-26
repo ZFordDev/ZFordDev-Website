@@ -1,0 +1,66 @@
+---
+layout: layout.njk
+title: "Writings"
+---
+
+<main class="flex-grow pt-24 pb-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <h1 class="text-5xl font-bold text-white mb-10">Writings</h1>
+    <div class="mb-10">
+      <a href="/submit-writing/" 
+         class="inline-flex items-center gap-2 px-5 py-3 rounded-lg glass-panel border border-slate-700 text-slate-200 font-semibold hover:bg-slate-800 transition">
+        <i data-lucide="lightbulb" class="w-5 h-5 text-indigo-400"></i>
+        Have something worth adding?<br> Share your knowledge.
+      </a>
+      <p class="text-slate-500 text-sm mt-2">
+        Knowledge is power — and we’re always expanding our library.  
+        Click above to submit a topic, idea, or request.
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {% for writing in writings %}
+      <a href="/writings/{{ writing.slug }}/" class="block p-6 rounded-xl bg-slate-900/50 border border-slate-800 hover:bg-slate-800 transition">
+        <h2 class="text-2xl font-semibold text-white mb-2">{{ writing.title }}</h2>
+        <p class="text-slate-400 mb-2">{{ writing.description }}</p>
+        <span class="text-xs text-slate-500">{{ writing.date }}</span>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</main>
+
+<script>
+  function filterProjects(category) {
+    const cards = document.querySelectorAll('.artifact-card');
+    const noResults = document.getElementById('no-results');
+    let visibleCount = 0;
+
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.classList.remove('bg-indigo-600', 'text-white');
+      btn.classList.add('bg-slate-800', 'text-slate-300');
+    });
+    event.target.classList.add('bg-indigo-600', 'text-white');
+    event.target.classList.remove('bg-slate-800', 'text-slate-300');
+
+    // Filter cards
+    cards.forEach(card => {
+      const cardCategories = card.dataset.category;
+      if (category === 'all' || cardCategories.includes(category)) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Show/hide no results message
+    noResults.classList.toggle('hidden', visibleCount > 0);
+  }
+
+  // Initialize lucide icons
+  lucide.createIcons();
+</script>

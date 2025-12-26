@@ -1,0 +1,61 @@
+---
+layout: layout.njk
+---
+
+<main class="pt-24 pb-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+    <!-- LEFT INDEX -->
+    <aside class="lg:col-span-3 space-y-4">
+      <h3 class="text-slate-300 font-semibold text-sm tracking-wide mb-2">Index</h3>
+
+      <nav class="space-y-2">
+        {% for item in collections.writings %}
+          <a href="{{ item.url }}"
+             class="block px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition
+             {% if item.url == page.url %} bg-slate-800/80 text-white {% endif %}">
+            {{ item.data.title }}
+          </a>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    <!-- CENTER Writing WINDOW -->
+    <div class="lg:col-span-6">
+      <h1 class="text-4xl font-bold text-white mb-4">{{ title }}</h1>
+      <p class="text-slate-500 text-sm mb-8">{{ date }}</p>
+
+      <div class="rounded-xl bg-slate-900/60 border border-slate-800 shadow-xl overflow-hidden">
+        <div class="flex items-center gap-2 px-4 py-2 bg-slate-800/60 border-b border-slate-700">
+          <span class="w-3 h-3 rounded-full bg-green-500/70"></span>
+          <span class="ml-3 text-xs text-slate-400 tracking-wide uppercase font-mono">SnapDock Engine v{{ metadata.version }}</span>
+        </div>
+      
+          <article class="prose prose-neutral dark:prose-invert max-w-none">
+            {{ content | safe }}
+          </article>
+      </div>
+    </div>
+
+    <!-- RIGHT RELATED WritingS -->
+    <aside class="lg:col-span-3 space-y-4">
+      <h3 class="text-slate-300 font-semibold text-sm tracking-wide mb-2">Related Writings</h3>
+
+      {% set related = collections.writings
+          | rejectattr("url", "equalto", page.url)
+          | selectattr("data.tags", "contains", tags[0])
+          | reverse
+          | slice(0, 3)
+      %}
+
+      {% for item in related %}
+        <a href="{{ item.url }}"
+           class="block p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:bg-slate-800 transition">
+          <h4 class="text-white font-semibold">{{ item.data.title }}</h4>
+          <p class="text-slate-500 text-sm">{{ item.data.description }}</p>
+        </a>
+      {% endfor %}
+    </aside>
+
+  </div>
+</main>

@@ -2,10 +2,20 @@
   {
     "slug": "snapdock",
     "title": "SnapDock — Markdown Workspace",
+    "show": true,
     "repo": "https://github.com/ZFordDev/SnapDock",
+    "download": {
+      "label": "Download Latest",
+      "url": "https://github.com/ZFordDev/SnapDock/releases/latest/download/SnapDock.zip"
+    },
+    "test": {
+      "label": "Test in Browser",
+      "status": "coming-soon",
+      "url": null
+    }, 
     "image": "/assets/pics/SnapDock.png",
     "badges": ["Flagship", "Productivity"],
-    "description": "A clean, fast Markdown reader built with pure JavaScript, HTML, and CSS. SnapDock provides a distraction‑free workspace with file-tree navigation, multi-file viewing, and a polished ZetoLabs interface.",
+    "description": "A clean, fast Markdown reader built with pure JavaScript, HTML, and CSS. SnapDock provides a distraction-free workspace with file-tree navigation, multi-file viewing, and a polished ZFordDev interface.",
     "color": "indigo",
     "features": [
       { "title": "File-Tree Navigation", "description": "Browse folders of Markdown files with a simple, responsive sidebar." },
@@ -16,16 +26,16 @@
     "techStack": ["JavaScript", "HTML", "CSS"],
     "metadata": {
       "license": "MIT",
-      "version": "2.0.1",
+      "version": "2.1.2",
       "lastUpdated": "Dec 2025",
-      "platform": "Windows (current), Cross‑platform planned"
+      "platform": "Windows (current), Cross-platform planned"
     },
-    "engineeringNotes": "SnapDock is intentionally lightweight and dependency‑free, built with native web technologies for maximum clarity and maintainability. The UI follows ZetoLabs design principles: clean, minimal, and distraction‑free. Cross‑platform builds are planned once the underlying OS tooling is ready.",
+    "engineeringNotes": "SnapDock is intentionally lightweight and dependency-free, built with native web technologies for maximum clarity and maintainability. The UI follows ZFordDev design principles: clean, minimal, and distraction-free. Cross-platform builds are planned once the underlying OS tooling is ready.",
     "roadmap": [
       { "status": "completed", "item": "Core Markdown viewer and file-tree" },
       { "status": "completed", "item": "Drag-and-drop folder loading" },
-      { "status": "in-progress", "item": "PDF export engine" },
-      { "status": "planned", "item": "Multi-tab editing mode" },
+      { "status": "completed", "item": "PDF export engine" },
+      { "status": "in-progress", "item": "Multi-tab editing mode" },
       { "status": "planned", "item": "Cross-platform packaging" }
     ]
   },
@@ -33,16 +43,22 @@
   {
     "slug": "zia",
     "title": "ZIA — Modular AI Assistant Framework",
+    "show":true,
     "repo": "https://github.com/ZFordDev/ZIA",
+        "releventLink": {
+          "label": "Learn About ALX",
+          "url": "https://zford.dev/products/alx-zia/"
+        },
     "image": "/assets/pics/ZIA.png",
     "badges": ["AI/ML", "Prototype"],
-    "description": "A proof-of-concept modular AI assistant that connects Slack, Discord, and a web interface to local or external AI models. Built to explore persona switching, persistent memory, and multi‑platform routing.",
+    "description": "A proof-of-concept modular AI assistant that connects Slack, Discord, and a web interface to local or external AI models. Built to explore persona switching, persistent memory, and multi‑platform routing. ZIA now serves as the foundation for ALX‑ZIA — the next-generation hardware-first evolution of this architecture.",
     "color": "purple",
     "features": [
       { "title": "Slack & Discord Handlers", "description": "Unified message routing across multiple chat platforms." },
       { "title": "Persona Templates", "description": "Switch between conversation styles using JSON-based persona configs." },
       { "title": "Persistent Memory", "description": "Per-channel JSON memory storage with no database required." },
-      { "title": "Config-Driven Setup", "description": "All behavior controlled through JSON files — no code edits needed." }
+      { "title": "Config-Driven Setup", "description": "All behavior controlled through JSON files — no code edits needed." },
+      { "title": "ALX‑ZIA Integration", "description": "ZIA is the software backbone that inspired and now connects to ALX‑ZIA, the hardware-first successor." }
     ],
     "techStack": ["Python", "FastAPI", "WebSockets"],
     "metadata": {
@@ -51,18 +67,57 @@
       "lastUpdated": "Dec 2025",
       "platform": "Cross-platform"
     },
-    "engineeringNotes": "ZIA is intentionally raw — a prototype that laid the groundwork for ZetoAI. It demonstrates routing, persona switching, and memory, but is not intended as a polished product.",
+    "engineeringNotes": "ZIA is intentionally raw — a prototype that laid the groundwork for ALX‑ZIA and ZiaStudio. It demonstrates routing, persona switching, and memory, but is not intended as a polished product.",
     "roadmap": [
       { "status": "completed", "item": "Slack + Discord integration" },
       { "status": "completed", "item": "Persona system" },
       { "status": "in-progress", "item": "Web handler improvements" },
-      { "status": "planned", "item": "Offline docs loader" }
+      { "status": "planned", "item": "Offline docs loader" },
+      { "status": "planned", "item": "ALX‑ZIA bridge module" }
     ]
   },
-
+  {
+    "slug": "alx-zia",
+    "title": "ALX‑ZIA — Hardware‑First AI Assistant",
+    "show": false,
+    "repo": null,
+    "releventLink": {
+      "label": "Learn About ALX",
+      "url": "https://zford.dev/products/zia/"
+    },
+    "viewLink": "https://github.com/ZFordDev/ZIA",
+    "viewLabel": "View ZIA",
+    "image": "/assets/pics/ALX-ZIA.png",
+    "badges": ["AI/ML", "Hardware", "Proprietary"],
+    "description": "ALX‑ZIA is the hardware‑first evolution of the original ZIA framework. Designed for dedicated rental devices, ALX‑ZIA focuses on privacy, modularity, and real‑world utility. While the original ZIA remains open-source, ALX‑ZIA is a proprietary system forming the backbone of the ALX ecosystem.",
+    "color": "blue",
+    "features": [
+      { "title": "Hardware‑First Architecture", "description": "Optimized for dedicated devices, enabling low‑latency, private, local inference." },
+      { "title": "Modular Node System", "description": "Plug‑and‑play modules for sensors, inputs, outputs, and AI pipelines." },
+      { "title": "ZIA Compatibility Layer", "description": "Bridges the open-source ZIA prototype with the new ALX hardware ecosystem." },
+      { "title": "Local + Cloud Hybrid", "description": "Run models locally or route to external providers when needed." },
+      { "title": "Config‑Driven Design", "description": "All behavior defined through JSON and YAML configs — no code changes required." }
+    ],
+    "techStack": ["Python", "FastAPI", "MQTT", "Embedded Linux"],
+    "metadata": {
+      "license": "Proprietary",
+      "version": "0.1.0",
+      "lastUpdated": "Dec 2025",
+      "platform": "ALX Hardware"
+    },
+    "engineeringNotes": "ALX‑ZIA represents the shift from a software‑only prototype to a hardware‑anchored AI system. It inherits routing, persona, and memory concepts from ZIA, but expands them into a distributed, device‑driven architecture. ALX‑ZIA is closed-source and distributed exclusively on ALX rental devices.",
+    "roadmap": [
+      { "status": "in-progress", "item": "Core hardware integration" },
+      { "status": "in-progress", "item": "ZIA compatibility bridge" },
+      { "status": "planned", "item": "Sensor and module SDK" },
+      { "status": "planned", "item": "Local model runner" },
+      { "status": "planned", "item": "ALX device dashboard" }
+    ]
+  },
   {
     "slug": "nestkey",
     "title": "NestKey — Secure Password Vault",
+    "show": false,
     "repo": "https://github.com/ZFordDev/NestKey",
     "image": "/assets/pics/NestKey.png",
     "badges": ["Security", "Local-First"],
@@ -92,49 +147,16 @@
   },
 
   {
-    "slug": "thronebound",
-    "title": "Thronebound — Kingdom‑Building Survival RTS (Concept)",
-    "repo": "https://github.com/ZFordDev/Thronebound",
-    "image": "/assets/pics/Thronebound.png",
-    "badges": ["Concept", "Game Dev", "Rust"],
-    "description": "A first-person kingdom‑building survival RTS concept built around a single core rule: protect the throne at all costs. Thronebound blends voxel mining, villager automation, RTS combat, and age progression into a unified kingdom simulation.",
-    "color": "rose",
-    "features": [
-      { "title": "Throne‑Centric Gameplay", "description": "Your throne is your respawn, progression hub, and loss condition. Lose it, lose the kingdom." },
-      { "title": "First‑Person Kingdom Building", "description": "Gather resources, place buildings, and command villagers directly from ground level." },
-      { "title": "Villager Workforce System", "description": "Hire workers, builders, soldiers, and specialists to automate your economy and defend your realm." },
-      { "title": "Age Progression", "description": "Advance through multiple ages, unlocking new tech, units, and structures." },
-      { "title": "RTS Combat & Defense", "description": "Build armies, fortify walls, and defend your throne from raids, factions, and rival kingdoms." }
-    ],
-    "techStack": ["Rust", "Bevy Engine", "ECS Architecture", "Voxel Systems (Planned)"],
-    "metadata": {
-      "license": "Proprietary",
-      "version": "0.0.1-concept",
-      "lastUpdated": "Dec 2025",
-      "platform": "PC (Windows/Linux planned)"
-    },
-    "engineeringNotes": "Thronebound is being designed from the ground up in Rust using the Bevy engine to ensure scalable AI, efficient ECS-driven simulation, and lightweight performance for large villager populations and RTS-scale battles. The project is currently in the concept and architecture phase, with voxel terrain, AI behavior trees, and throne progression systems planned.",
-    "roadmap": [
-      { "status": "planned", "item": "Voxel terrain prototype" },
-      { "status": "planned", "item": "Player controller + basic gathering" },
-      { "status": "planned", "item": "Throne system (respawn, upgrades, ages)" },
-      { "status": "planned", "item": "Villager AI (workers, builders, soldiers)" },
-      { "status": "planned", "item": "RTS squad controls" },
-      { "status": "planned", "item": "Procedural world generation" },
-      { "status": "planned", "item": "Multiplayer sync model" }
-    ]
-  },
-
-  {
     "slug": "networking-systems",
-    "title": "Networking & Systems — ZetoLabs Infrastructure",
+    "title": "Networking & Systems — ZFordDev Infrastructure",
+    "show": true,
     "repo": "/",
     "image": "/assets/pics/infrastructure.png",
     "badges": ["Infrastructure", "Internal", "Systems Engineering"],
-    "description": "The internal infrastructure powering ZetoLabs: secure networking, home‑lab servers, API tooling, and a disciplined deployment workflow designed for reliability, transparency, and future scalability.",
+    "description": "The internal infrastructure powering ZFordDev: secure networking, home-lab servers, API tooling, and a disciplined deployment workflow designed for reliability, transparency, and future scalability.",
     "color": "cyan",
     "features": [
-      { "title": "Secure Home‑Lab Architecture", "description": "Ubuntu 24.04 LTS servers running behind managed switches, custom firewall rules, and isolated virtual networks." },
+      { "title": "Secure Home-Lab Architecture", "description": "Ubuntu 24.04 LTS servers running behind managed switches, custom firewall rules, and isolated virtual networks." },
       { "title": "API & Internal Tooling (ZIA)", "description": "Local-first API services powering automation, client workflows, and internal dashboards." },
       { "title": "Controlled Deployment Pipeline", "description": "Git → Syncthing → Server workflow ensuring only reviewed, approved files reach production." },
       { "title": "Monitoring & Uptime", "description": "Uptime Kuma dashboards, Nginx health checks, and network isolation for reliability." },
@@ -156,7 +178,7 @@
       "lastUpdated": "Dec 2025",
       "platform": "Home‑Lab + Virtualized Linux Servers"
     },
-    "engineeringNotes": "ZetoLabs infrastructure is built with a security‑first mindset: isolated networks, hardened SSH, strict firewall rules, and a controlled deployment pipeline. All systems are documented as credibility artifacts, ensuring repeatability and professional optics as the company scales.",
+    "engineeringNotes": "ZFordDevs infrastructure is built with a security-first mindset: isolated networks, hardened SSH, strict firewall rules, and a controlled deployment pipeline. All systems are documented as credibility projects, ensuring repeatability and professional optics as the company scales.",
     "roadmap": [
       { "status": "completed", "item": "Ubuntu server deployment + hardened SSH" },
       { "status": "completed", "item": "Git → Syncthing → Server workflow" },
