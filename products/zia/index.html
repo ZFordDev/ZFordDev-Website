@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ artifact.title }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ZIA — Modular AI Assistant Framework</title>
+    <link rel="stylesheet" href="/assets/tailwind.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         /* Custom Utilities */
@@ -47,7 +47,9 @@
                 </a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Artifacts</a>
+                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"> YouTube</a>
+                        <!-- <a href="/writings/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Writings</a> -->
                         <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
                     </div>
@@ -62,7 +64,9 @@
 
         <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Artifacts</a>
+                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"> YouTube </a>
+                <!-- <a href="/writings/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Writings</a> -->
                 <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
                 <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
             </div>
@@ -91,16 +95,36 @@
           
         </div>
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">ZIA — Modular AI Assistant Framework</h1>
-        <p class="text-xl text-slate-400 max-w-3xl">A proof-of-concept modular AI assistant that connects Slack, Discord, and a web interface to local or external AI models. Built to explore persona switching, persistent memory, and multi‑platform routing.</p>
+        <p class="text-xl text-slate-400 max-w-3xl">A proof-of-concept modular AI assistant that connects Slack, Discord, and a web interface to local or external AI models. Built to explore persona switching, persistent memory, and multi‑platform routing. ZIA now serves as the foundation for ALX‑ZIA — the next-generation hardware-first evolution of this architecture.</p>
       </div>
-      <div class="flex gap-4 mt-4 md:mt-0">
-          
-          
-          <a href="https://github.com/ZFordDev/ZIA" target="_blank" class="px-6 py-3 rounded-lg glass-panel text-slate-200 font-semibold hover:bg-slate-800 transition-all flex items-center gap-2">
-            <i data-lucide="github" class="w-4 h-4"></i> View Source
-          </a>
-          
-          
+      <div class="flex flex-col gap-3 mt-4 md:mt-0">
+
+
+  
+    
+      <a href="https://github.com/ZFordDev/ZIA" target="_blank" class="px-6 py-3 rounded-lg glass-panel text-slate-200 font-semibold hover:bg-slate-800 transition-all flex items-center gap-2">
+        <i data-lucide="github" class="w-4 h-4"></i> View Source
+      </a>
+    
+  
+  
+  
+  
+  
+  
+  
+    <a href="https://zford.dev/products/alx-zia/" target="_blank"
+       class="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-all flex items-center gap-2">
+      <i data-lucide="info" class="w-4 h-4"></i> Learn About ALX
+    </a>
+  
+  
+  
+  
+  
+  
+  
+
       </div>
     </div>
   </div>
@@ -142,12 +166,17 @@
               <p class="text-slate-400 text-sm">All behavior controlled through JSON files — no code edits needed.</p>
             </div>
             
+            <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
+              <h3 class="font-bold text-white mb-2">ALX‑ZIA Integration</h3>
+              <p class="text-slate-400 text-sm">ZIA is the software backbone that inspired and now connects to ALX‑ZIA, the hardware-first successor.</p>
+            </div>
+            
           </div>
         </div>
 
         <div class="prose prose-invert prose-slate max-w-none">
           <h3 class="text-xl font-bold text-white mb-4">Engineering Notes</h3>
-          <p class="text-slate-400 leading-relaxed">ZIA is intentionally raw — a prototype that laid the groundwork for ZetoAI. It demonstrates routing, persona switching, and memory, but is not intended as a polished product.</p>
+          <p class="text-slate-400 leading-relaxed">ZIA is intentionally raw — a prototype that laid the groundwork for ALX‑ZIA and ZiaStudio. It demonstrates routing, persona switching, and memory, but is not intended as a polished product.</p>
         </div>
       </div>
 
@@ -240,6 +269,18 @@
               </div>
             </div>
             
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
+                <i data-lucide="circle" class="w-4 h-4 text-slate-600"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">ALX‑ZIA bridge module</p>
+                <span class="text-xs text-slate-500 capitalize">planned</span>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -256,7 +297,7 @@
                 <div class="mb-6 md:mb-0">
                     <span class="text-2xl font-bold text-white">ZFord<span class="text-indigo-400">Dev</span></span>
                     <p class="text-slate-500 text-sm mt-2">
-                        Projects by <span class="text-indigo-300 font-semibold">ZetoLabs</span>.  
+                        Projects by <span class="text-indigo-300 font-semibold">ZFordDevs</span>.  
                         © 2025 All Systems Operational.
                     </p>
                 </div>

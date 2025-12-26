@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - ZFordDev</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/tailwind.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         /* Custom Utilities */
@@ -47,7 +47,9 @@
                 </a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Artifacts</a>
+                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"> YouTube</a>
+                        <!-- <a href="/writings/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Writings</a> -->
                         <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
                     </div>
@@ -62,7 +64,9 @@
 
         <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Artifacts</a>
+                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"> YouTube </a>
+                <!-- <a href="/writings/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Writings</a> -->
                 <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
                 <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
             </div>
@@ -81,7 +85,10 @@
     <div class="mb-16">
       <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">About Me</h1>
       <p class="text-xl text-slate-400 leading-relaxed">
-        I'm Zachary Ford — a systems engineer, full-stack developer, and father. My career is defined by a commitment to building robust, disciplined software. I combine low-level systems thinking with high-level product design to create tools that are reliable, performant, and built to last. I build with intention, document with discipline, and plan for the long term.
+        I'm Zachary Ford, a developer who builds practical tools that solve real problems. 
+        I focus on quality over quantity, planning deeply before I write a line of code so every project 
+        has a clear purpose and a clean path forward. I care about thoughtful design, long-term 
+        reliability, and creating software that genuinely helps people.
       </p>
     </div>
 
@@ -90,23 +97,32 @@
         <section>
           <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
             <i data-lucide="user" class="w-6 h-6 text-indigo-400"></i>
-            Who I Am
+            The Approach
           </h2>
+
           <p class="text-slate-400 leading-relaxed mb-4">
-            I'm a full-stack engineer based in Warwick, balancing professional development with raising three incredible kids. My technical expertise spans from systems programming in Rust to modern web architecture, always grounded in best practices for security and modularity.
+            I'm a developer based in Warwick, balancing a passion for systems engineering with raising three incredible kids. 
+            I build software with a focus on clarity, reliability, and long-term maintainability. I prefer 
+            practical engineering over chasing trends, ensuring that what I build today still works and is still readable years from now.
           </p>
+
           <p class="text-slate-400 leading-relaxed mb-4">
-            Through my R&D lab, ZetoLabs, I explore distributed systems and offline-first architectures. I build secure infrastructure and resilient tools not just for technical elegance, but to ensure reliability in any environment. My ecosystem of projects—including SnapDock, NestKey, and TitanIX—serves as a proving ground for these architectural principles.
+            I explore distributed systems, resource-efficient design, and resilient tooling. 
+            Projects like <strong>SnapDock</strong>, <strong>NestKey</strong>, and <strong>TitanIX</strong> are more than just apps they are 
+            deep dives into architecture and modularity. Each one reflects my belief that 
+            good software should be simple to use, easy to understand, and built to last.
           </p>
+
           <p class="text-slate-400 leading-relaxed">
-            I prioritize sustainable engineering over hype. I am looking to bring this discipline to a team that values well-architected systems and long-term stability.
+            I care about sustainable engineering over hype. I'm looking to bring this mindset to a team that 
+            values well-structured systems, clear thinking, and a disciplined approach to building software.
           </p>
         </section>
 
         <section>
           <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
             <i data-lucide="lightbulb" class="w-6 h-6 text-indigo-400"></i>
-            Engineering Philosophy
+            Engineering Principles
           </h2>
 
           <div class="space-y-4">
@@ -114,30 +130,30 @@
             <div class="p-6 rounded-lg bg-slate-900/50 border border-slate-800">
               <h3 class="font-bold text-white mb-2 flex items-center gap-2">
                 <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
-                Artifact-Driven Development
+                Handoff-Ready Engineering
               </h3>
               <p class="text-slate-400 text-sm">
-                I view every project as an artifact—a solution to a problem that requires clarity and documentation. I don't just write code; I build systems that are maintainable, well-documented, and designed to be understood by others.
+                I believe code is only half the job. I treat every project as a system that someone else will eventually need to understand. I prioritize clean READMEs, logical architecture, and clear documentation to ensure my work is easy to maintain and scale for the next developer.
               </p>
             </div>
 
             <div class="p-6 rounded-lg bg-slate-900/50 border border-slate-800">
               <h3 class="font-bold text-white mb-2 flex items-center gap-2">
                 <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
-                Resilience & Local-First
+                Resource Respect & Resilience
               </h3>
               <p class="text-slate-400 text-sm">
-                I specialize in architectures that remain functional regardless of network conditions. By prioritizing local capability and data synchronization, I build software that is faster, more reliable, and respects the user's resources.
+                I specialize in architectures that remain functional regardless of network conditions. By prioritizing local capability and efficient data sync, I build software that is faster, more reliable, and respects the user's hardware.
               </p>
             </div>
 
             <div class="p-6 rounded-lg bg-slate-900/50 border border-slate-800">
               <h3 class="font-bold text-white mb-2 flex items-center gap-2">
                 <span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
-                Scalable & Modular Design
+                Composable Logic
               </h3>
               <p class="text-slate-400 text-sm">
-                Systems should adapt, not break. I design with modularity in mind, ensuring components can be upgraded or replaced without dismantling the whole. This approach reduces technical debt and allows applications to scale alongside business needs.
+                Systems should adapt, not break. I design with modularity in mind, ensuring components can be upgraded or replaced without dismantling the whole. This reduces technical debt and allows applications to scale alongside actual needs.
               </p>
             </div>
 
@@ -151,7 +167,7 @@
           </h2>
 
           <p class="text-slate-400 leading-relaxed mb-6">
-            My work spans the full stack, with a focus on creating integrated ecosystems where every layer supports the next. I am comfortable working across the stack, from the metal up to the UI.
+            My work spans the full stack, with a focus on creating integrated ecosystems where every layer supports the next. I'm comfortable moving from low-level systems logic up to the user interface.
           </p>
 
           <ul class="space-y-3 text-slate-400">
@@ -168,7 +184,7 @@
 
             <li class="flex items-start gap-3">
               <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
-              <span><strong class="text-white">AI & Workflow Automation</strong> — Designing modular agents (ZIA) that enhance productivity while maintaining strict data governance controls.</span>
+              <span><strong class="text-white">Workflow Automation</strong> — Designing modular tools and agents that enhance productivity while maintaining strict data governance.</span>
             </li>
 
             <li class="flex items-start gap-3">
@@ -178,48 +194,29 @@
 
           </ul>
         </section>
-
-        <section>
-          <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
-            <i data-lucide="zap" class="w-6 h-6 text-indigo-400"></i>
-            My Professional Focus
-          </h2>
-
-          <p class="text-slate-400 leading-relaxed mb-4">
-            In an era of rapid technological change, I focus on building tools that empower the user. I believe software should be transparent, efficient, and respect user privacy by design.
-          </p>
-
-          <p class="text-slate-400 leading-relaxed mb-4">
-            Whether I'm optimizing a backend for performance or designing a user interface for clarity, my goal is to deliver high-quality software that solves real problems without creating new dependencies.
-          </p>
-
-          <p class="text-slate-400 leading-relaxed">
-            I bring this same intentionality to any team I join—delivering code that is clean, systems that are secure, and solutions that drive value.
-          </p>
-        </section>
       </div>
 
       <div class="space-y-8">
         <div class="glass-panel p-6 rounded-xl">
           <h3 class="font-bold text-white mb-6 flex items-center gap-2">
             <i data-lucide="activity" class="w-4 h-4 text-cyan-400"></i>
-            Overview
+            Quick Stats
           </h3>
           <div class="space-y-4">
 
             <div class="text-center py-3 border-b border-slate-700">
-              <p class="text-3xl font-bold text-indigo-400">8+</p>
-              <p class="text-xs text-slate-500">Active Projects</p>
+              <p class="text-3xl font-bold text-indigo-400">Active</p>
+              <p class="text-xs text-slate-500">Shipping Code & Field Notes</p>
             </div>
 
             <div class="text-center py-3 border-b border-slate-700">
               <p class="text-3xl font-bold text-purple-400">Full Stack</p>
-              <p class="text-xs text-slate-500">Rust, JS, Python, DevOps</p>
+              <p class="text-xs text-slate-500">Python, JS, Systems & Infra</p>
             </div>
 
             <div class="text-center py-3">
               <p class="text-3xl font-bold text-emerald-400">3</p>
-              <p class="text-xs text-slate-500">Future Engineers (Kids)</p>
+              <p class="text-xs text-slate-500">Future Developers (Kids)</p>
             </div>
 
           </div>
@@ -228,28 +225,24 @@
         <div class="glass-panel p-6 rounded-xl">
           <h3 class="font-bold text-white mb-4 flex items-center gap-2">
             <i data-lucide="cpu" class="w-4 h-4 text-purple-400"></i>
-            Core Competencies
+            Stack & Tools
           </h3>
-           
+            
           <div class="flex flex-wrap gap-2">
-           
+            
             <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Rust</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">JavaScript/TypeScript</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">TypeScript</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Node.js</span>
             <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Python</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">HTML/CSS</span>
-           
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Systems Architecture</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Networking & Security</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">CI/CD & DevOps</span>
-           
+            
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Docker</span>
             <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Nginx</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Virtualization/Hyper-V</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Linux</span>
+            
             <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Distributed Systems</span>
-           
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Technical Documentation</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Product Lifecycle</span>
-            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Strategic Planning</span>
-           
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">CI/CD</span>
+            <span class="px-3 py-1 bg-slate-800 rounded-full text-xs text-slate-300 border border-slate-700">Technical Docs</span>
+            
           </div>
         </div>
 
@@ -263,7 +256,7 @@
               <i data-lucide="github" class="w-4 h-4"></i>
               <span class="text-sm">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/zachary-ford-009965393/" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/ZFordDev/" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
               <i data-lucide="linkedin" class="w-4 h-4"></i>
               <span class="text-sm">LinkedIn</span>
             </a>
@@ -285,7 +278,7 @@
                 <div class="mb-6 md:mb-0">
                     <span class="text-2xl font-bold text-white">ZFord<span class="text-indigo-400">Dev</span></span>
                     <p class="text-slate-500 text-sm mt-2">
-                        Projects by <span class="text-indigo-300 font-semibold">ZetoLabs</span>.  
+                        Projects by <span class="text-indigo-300 font-semibold">ZFordDevs</span>.  
                         © 2025 All Systems Operational.
                     </p>
                 </div>

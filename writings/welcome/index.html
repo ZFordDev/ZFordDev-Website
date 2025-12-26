@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the ZFordDev Knowledge Library</title>
+    <link rel="stylesheet" href="/assets/tailwind.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom Utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex-shrink-0 cursor-pointer">
+                    <span class="text-2xl font-bold tracking-tighter text-white">ZFord<span class="text-indigo-400">Dev</span></span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"> YouTube</a>
+                        <!-- <a href="/writings/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Writings</a> -->
+                        <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"> YouTube </a>
+                <!-- <a href="/writings/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Writings</a> -->
+                <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+<main class="pt-24 pb-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+    <!-- LEFT INDEX -->
+    <aside class="lg:col-span-3 space-y-4">
+      <h3 class="text-slate-300 font-semibold text-sm tracking-wide mb-2">Index</h3>
+
+      <nav class="space-y-2">
+        
+          <a href="/writings/welcome/"
+             class="block px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition
+              bg-slate-800/80 text-white ">
+            Welcome to the ZFordDev Knowledge Library
+          </a>
+        
+      </nav>
+    </aside>
+
+    <!-- CENTER Writing WINDOW -->
+    <div class="lg:col-span-6">
+      <h1 class="text-4xl font-bold text-white mb-4">Welcome to the ZFordDev Knowledge Library</h1>
+      <p class="text-slate-500 text-sm mb-8">Sun Jan 12 2025 10:00:00 GMT+1000 (Australian Eastern Standard Time)</p>
+
+      <div class="rounded-xl bg-slate-900/60 border border-slate-800 shadow-xl overflow-hidden">
+        <div class="flex items-center gap-2 px-4 py-2 bg-slate-800/60 border-b border-slate-700">
+          <span class="w-3 h-3 rounded-full bg-green-500/70"></span>
+          <span class="ml-3 text-xs text-slate-400 tracking-wide uppercase font-mono">SnapDock Engine v</span>
+        </div>
+      
+          <article class="prose prose-neutral dark:prose-invert max-w-none">
+            <p>Every project I build starts the same way: with notes.<br>
+Not polished documentation, not a grand plan — just raw thoughts, sketches, fragments, and the occasional “future me will understand this” lie.</p>
+<p>Over time, I’ve realised those notes aren’t just a by‑product of the work.<br>
+They <em>are</em> the work.</p>
+<p>They’re where ideas form, where problems get untangled, and where the real engineering happens long before a line of code exists. My process has always been built on planning, reflection, and writing things down so I can understand them better — and so I can return later with clearer eyes.</p>
+<p>This section of the site exists to give those notes a home.</p>
+<p>Right now, it’s empty. That’s intentional.<br>
+It’s a blank space waiting to be filled with the things that matter:</p>
+<ul>
+<li>the lessons learned while building tools</li>
+<li>the patterns that keep showing up</li>
+<li>the small discoveries that deserve to be written down</li>
+<li>the decisions that shape how my projects grow</li>
+<li>the ideas that don’t fit anywhere else yet</li>
+</ul>
+<p>As new projects evolve, as problems get solved, and as I refine the way I build, this library will grow alongside everything else. Some entries will be short. Some will be deep dives. Some will be reminders to myself that might help someone else one day.</p>
+<p>This isn’t the blog.<br>
+That’s coming later, with its own tone, purpose, and direction.</p>
+<p>The <strong>Knowledge Library</strong> is different.<br>
+It’s the backbone — a place for reference material, internal logic, engineering notes, and the thinking that supports everything I build under the <strong>ZFordDev</strong> name.</p>
+
+          </article>
+      </div>
+    </div>
+
+    <!-- RIGHT RELATED WritingS -->
+    <aside class="lg:col-span-3 space-y-4">
+      <h3 class="text-slate-300 font-semibold text-sm tracking-wide mb-2">Related Writings</h3>
+
+      
+
+      
+    </aside>
+
+  </div>
+</main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">ZFord<span class="text-indigo-400">Dev</span></span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        Projects by <span class="text-indigo-300 font-semibold">ZFordDevs</span>.  
+                        © 2025 All Systems Operational.
+                    </p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="https://github.com/ZFordDev" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zachary-ford-009965393/" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://discord.gg/Kj8HayFrUV" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Discord</span>
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61582975721747" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="mailto:zetolabs.au@gmail.com" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Email</span>
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-slate-950/90', 'backdrop-blur-md', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-slate-950/90', 'backdrop-blur-md', 'shadow-lg');
+            }
+        });
+    </script>
+
+    
+
+</body>
+</html>
