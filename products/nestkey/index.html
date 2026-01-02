@@ -48,8 +48,6 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"> YouTube</a>
-                        <!-- <a href="/writings/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Writings</a> -->
                         <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
                     </div>
@@ -65,8 +63,6 @@
         <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
-                <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"> YouTube </a>
-                <!-- <a href="/writings/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Writings</a> -->
                 <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
                 <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
             </div>
@@ -166,7 +162,7 @@
 
         <div class="prose prose-invert prose-slate max-w-none">
           <h3 class="text-xl font-bold text-white mb-4">Engineering Notes</h3>
-          <p class="text-slate-400 leading-relaxed">NestKey is intentionally simple and transparent, built with native web technologies for maximum auditability. Encryption is handled client-side, ensuring that sensitive data never leaves the user&#39;s machine. Cross-platform packaging will be added once OS tooling is ready.</p>
+          <p class="text-slate-400 leading-relaxed">NestKey is being rebuilt from the ground up using Avalonia and .NET to create a modern, cross‑platform, native‑feeling password vault. The redesign focuses on a cleaner UI, a more robust vault layer, and a hardened security model. This rebuild replaces the original web‑based prototype with a long‑term, maintainable architecture.</p>
         </div>
       </div>
 
@@ -197,7 +193,7 @@
           </div>
           <div class="flex justify-between items-center border-b border-slate-700 pb-3">
             <span class="text-slate-400 text-sm">Last Updated</span>
-            <span class="text-white text-sm font-medium">Dec 2025</span>
+            <span class="text-white text-sm font-medium">Jan 2026</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="text-slate-400 text-sm">Platform</span>
@@ -214,35 +210,11 @@
             <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
               <div class="mt-1">
                 
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-                
-              </div>
-              <div class="flex-1">
-                <p class="text-slate-300 text-sm">Core vault encryption</p>
-                <span class="text-xs text-slate-500 capitalize">completed</span>
-              </div>
-            </div>
-            
-            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
-              <div class="mt-1">
-                
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-                
-              </div>
-              <div class="flex-1">
-                <p class="text-slate-300 text-sm">Master password system</p>
-                <span class="text-xs text-slate-500 capitalize">completed</span>
-              </div>
-            </div>
-            
-            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
-              <div class="mt-1">
-                
                 <i data-lucide="circle" class="w-4 h-4 text-yellow-400"></i>
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">UI polish and improved UX</p>
+                <p class="text-slate-300 text-sm">Core UI rebuild in Avalonia</p>
                 <span class="text-xs text-slate-500 capitalize">in-progress</span>
               </div>
             </div>
@@ -254,7 +226,7 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Browser extension for auto-fill</p>
+                <p class="text-slate-300 text-sm">Vault layer implementation (.NET encryption + storage)</p>
                 <span class="text-xs text-slate-500 capitalize">planned</span>
               </div>
             </div>
@@ -266,7 +238,31 @@
                 
               </div>
               <div class="flex-1">
-                <p class="text-slate-300 text-sm">Cross-platform packaging</p>
+                <p class="text-slate-300 text-sm">Security hardening and threat‑model review</p>
+                <span class="text-xs text-slate-500 capitalize">planned</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
+                <i data-lucide="circle" class="w-4 h-4 text-slate-600"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">Cross‑platform packaging (Windows, Linux, macOS)</p>
+                <span class="text-xs text-slate-500 capitalize">planned</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-3 pb-3 border-b border-slate-700 last:border-0">
+              <div class="mt-1">
+                
+                <i data-lucide="circle" class="w-4 h-4 text-slate-600"></i>
+                
+              </div>
+              <div class="flex-1">
+                <p class="text-slate-300 text-sm">Browser extension for auto‑fill</p>
                 <span class="text-xs text-slate-500 capitalize">planned</span>
               </div>
             </div>

@@ -48,8 +48,6 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="/products/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium"> YouTube</a>
-                        <!-- <a href="/writings/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Writings</a> -->
                         <a href="/about/" class="hover:text-white transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="/#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
                     </div>
@@ -65,8 +63,6 @@
         <div class="hidden md:hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="/products/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
-                <a href="https://www.youtube.com/@ZFordDev" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"> YouTube </a>
-                <!-- <a href="/writings/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Writings</a> -->
                 <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
                 <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400 hover:text-indigo-300">Contact</a>
             </div>
@@ -121,7 +117,7 @@
     <!-- Projects Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-container">
       
-      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Flagship Productivity">
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Productivity">
         <a href="/products/snapdock/" class="block h-full">
           <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
             <div class="absolute inset-0 bg-grid opacity-10"></div>
@@ -134,8 +130,6 @@
           <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
             <div class="mb-3 flex flex-wrap gap-2">
               
-              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Flagship</span>
-              
               <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Productivity</span>
               
             </div>
@@ -144,7 +138,37 @@
             <p class="text-sm text-slate-400 line-clamp-2">A clean, fast Markdown reader built with pure JavaScript, HTML, and CSS. SnapDock provides a distraction-free workspace with file-tree navigation, multi-file viewing, and a polished ZFordDev interface.</p>
             
             <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-xs text-slate-500">v2.1.2</span>
+              <span class="text-xs text-slate-500">v2.2.0</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="SaaS Developer Tools">
+        <a href="/products/staxdash/" class="block h-full">
+          <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-grid opacity-10"></div>
+            
+            <img src="/assets/pics/StaxDash.png" alt="StaxDash — Unified Developer Command Center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          </div>
+          
+          <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
+            <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">SaaS</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Developer Tools</span>
+              
+            </div>
+            
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">StaxDash — Unified Developer Command Center</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">A unified dashboard designed to consolidate GitHub, Stripe, and Itch.io metrics into a single high‑performance command center. StaxDash is currently in development with a public launch planned for Feb 2026.</p>
+            
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-500">v0.1.0</span>
               <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
             </div>
           </div>
@@ -181,7 +205,7 @@
         </a>
       </div>
       
-      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="AI/ML Hardware Proprietary">
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Flagship AI/ML Hardware Proprietary">
         <a href="/products/alx-zia/" class="block h-full">
           <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
             <div class="absolute inset-0 bg-grid opacity-10"></div>
@@ -193,6 +217,8 @@
           
           <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
             <div class="mb-3 flex flex-wrap gap-2">
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Flagship</span>
               
               <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">AI/ML</span>
               
@@ -206,7 +232,7 @@
             <p class="text-sm text-slate-400 line-clamp-2">ALX‑ZIA is the hardware‑first evolution of the original ZIA framework. Designed for dedicated rental devices, ALX‑ZIA focuses on privacy, modularity, and real‑world utility. While the original ZIA remains open-source, ALX‑ZIA is a proprietary system forming the backbone of the ALX ecosystem.</p>
             
             <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-xs text-slate-500">v0.1.0</span>
+              <span class="text-xs text-slate-500">v0.4.3</span>
               <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
             </div>
           </div>
@@ -243,12 +269,12 @@
         </a>
       </div>
       
-      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Infrastructure Internal Systems Engineering">
-        <a href="/products/networking-systems/" class="block h-full">
+      <div class="artifact-card group rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all hover:shadow-xl" data-category="Internal Infrastructure Systems Engineering">
+        <a href="/products/infrastructure/" class="block h-full">
           <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center">
             <div class="absolute inset-0 bg-grid opacity-10"></div>
             
-            <img src="/assets/pics/infrastructure.png" alt="Networking &amp; Systems — ZFordDev Infrastructure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="/assets/pics/infrastructure.png" alt="ZetoLabs Infrastructure — Internal Systems" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
           </div>
@@ -256,16 +282,16 @@
           <div class="p-6 bg-slate-950/50 backdrop-blur-sm">
             <div class="mb-3 flex flex-wrap gap-2">
               
-              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Infrastructure</span>
-              
               <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Internal</span>
+              
+              <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Infrastructure</span>
               
               <span class="px-2 py-1 rounded text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">Systems Engineering</span>
               
             </div>
             
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Networking &amp; Systems — ZFordDev Infrastructure</h3>
-            <p class="text-sm text-slate-400 line-clamp-2">The internal infrastructure powering ZFordDev: secure networking, home-lab servers, API tooling, and a disciplined deployment workflow designed for reliability, transparency, and future scalability.</p>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">ZetoLabs Infrastructure — Internal Systems</h3>
+            <p class="text-sm text-slate-400 line-clamp-2">The internal infrastructure that powers the ZetoLabs ecosystem — secure servers, isolated networks, deployment tooling, and a disciplined engineering workflow designed for reliability and long‑term scalability.</p>
             
             <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
               <span class="text-xs text-slate-500">v1.0</span>
