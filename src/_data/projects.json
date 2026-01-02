@@ -1,45 +1,79 @@
 [
   {
-    "slug": "snapdock",
-    "title": "SnapDock — Markdown Workspace",
+  "slug": "snapdock",
+  "title": "SnapDock — Markdown Workspace",
+  "show": true,
+  "repo": "https://github.com/ZFordDev/SnapDock",
+  "releventLink": {
+    "label": "Visit Website",
+    "url": "https://snapdock.app"
+  },
+  "download": {
+    "label": "Download Latest",
+    "url": "https://github.com/ZFordDev/SnapDock/releases/download/2.2.0/SnapDock-Setup-2.2.0.exe"
+  },
+  "image": "/assets/pics/SnapDock.png",
+  "badges": ["Productivity"],
+  "description": "A clean, fast Markdown reader built with pure JavaScript, HTML, and CSS. SnapDock provides a distraction-free workspace with file-tree navigation, multi-file viewing, and a polished ZFordDev interface.",
+  "color": "indigo",
+  "features": [
+    { "title": "File-Tree Navigation", "description": "Browse folders of Markdown files with a simple, responsive sidebar." },
+    { "title": "Multi-File Viewing", "description": "Open multiple documents and switch between them instantly." },
+    { "title": "Drag-and-Drop Support", "description": "Drop files or folders directly into SnapDock to load them immediately." },
+    { "title": "PDF Export (Planned)", "description": "Future support for exporting Markdown documents to clean, styled PDFs." }
+  ],
+  "techStack": ["JavaScript", "HTML", "CSS"],
+  "metadata": {
+    "license": "MIT",
+    "version": "2.2.0",
+    "lastUpdated": "Jan 2026",
+    "platform": "Windows (current), Cross-platform planned"
+  },
+  "engineeringNotes": "SnapDock is intentionally lightweight and fully self‑contained. It ships with everything it needs and requires no external system dependencies. As the ZFordDev ecosystem expands, SnapDock continues to serve as a polished, reliable utility built on the same design principles that guide our larger projects.",
+  "roadmap": [
+    { "status": "completed", "item": "Core Markdown viewer and file-tree" },
+    { "status": "completed", "item": "Drag-and-drop folder loading" },
+    { "status": "completed", "item": "PDF export engine" },
+    { "status": "completed", "item": "Multi-tab editing mode" },
+    { "status": "in-progress", "item": "Website launch" },
+    { "status": "planned", "item": "Cross-platform packaging" }
+  ]
+  },
+  {
+    "slug": "staxdash",
+    "title": "StaxDash — Unified Developer Command Center",
     "show": true,
-    "repo": "https://github.com/ZFordDev/SnapDock",
-    "download": {
-      "label": "Download Latest",
-      "url": "https://github.com/ZFordDev/SnapDock/releases/latest/download/SnapDock.zip"
+    "repo": null,
+    "releventLink": {
+      "label": "Visit Holding Page",
+      "url": "https://staxdash.com"
     },
-    "test": {
-      "label": "Test in Browser",
-      "status": "coming-soon",
-      "url": null
-    }, 
-    "image": "/assets/pics/SnapDock.png",
-    "badges": ["Flagship", "Productivity"],
-    "description": "A clean, fast Markdown reader built with pure JavaScript, HTML, and CSS. SnapDock provides a distraction-free workspace with file-tree navigation, multi-file viewing, and a polished ZFordDev interface.",
+    "image": "/assets/pics/StaxDash.png",
+    "badges": ["SaaS", "Developer Tools"],
+    "description": "A unified dashboard designed to consolidate GitHub, Stripe, and Itch.io metrics into a single high‑performance command center. StaxDash is currently in development with a public launch planned for Feb 2026.",
     "color": "indigo",
     "features": [
-      { "title": "File-Tree Navigation", "description": "Browse folders of Markdown files with a simple, responsive sidebar." },
-      { "title": "Multi-File Viewing", "description": "Open multiple documents and switch between them instantly." },
-      { "title": "Drag-and-Drop Support", "description": "Drop files or folders directly into SnapDock to load them immediately." },
-      { "title": "PDF Export (Planned)", "description": "Future support for exporting Markdown documents to clean, styled PDFs." }
+      { "title": "Unified Metrics", "description": "View code, revenue, and store analytics in one place." },
+      { "title": "Developer‑First Design", "description": "A clean, minimal interface built for speed and clarity." },
+      { "title": "Ecosystem Integrations", "description": "GitHub, Stripe, and Itch.io support at launch." },
+      { "title": "High‑Performance Core", "description": "Fast, responsive, and built with modern web technologies." }
     ],
-    "techStack": ["JavaScript", "HTML", "CSS"],
+    "techStack": ["TypeScript", "Node.js", "TailwindCSS"],
     "metadata": {
-      "license": "MIT",
-      "version": "2.1.2",
-      "lastUpdated": "Dec 2025",
-      "platform": "Windows (current), Cross-platform planned"
+      "license": "Proprietary",
+      "version": "0.1.0",
+      "lastUpdated": "Jan 2026",
+      "platform": "Web"
     },
-    "engineeringNotes": "SnapDock is intentionally lightweight and dependency-free, built with native web technologies for maximum clarity and maintainability. The UI follows ZFordDev design principles: clean, minimal, and distraction-free. Cross-platform builds are planned once the underlying OS tooling is ready.",
+    "engineeringNotes": "StaxDash is the next major step in the ZFordDev ecosystem — a unified command center for developers who want their metrics in one place. The current holding page establishes the brand and early presence while the full SaaS platform is under active development.",
     "roadmap": [
-      { "status": "completed", "item": "Core Markdown viewer and file-tree" },
-      { "status": "completed", "item": "Drag-and-drop folder loading" },
-      { "status": "completed", "item": "PDF export engine" },
-      { "status": "in-progress", "item": "Multi-tab editing mode" },
-      { "status": "planned", "item": "Cross-platform packaging" }
+      { "status": "in-progress", "item": "Core dashboard layout" },
+      { "status": "in-progress", "item": "GitHub integration" },
+      { "status": "planned", "item": "Stripe analytics module" },
+      { "status": "planned", "item": "Itch.io store integration" },
+      { "status": "planned", "item": "User accounts + onboarding" }
     ]
   },
-
   {
     "slug": "zia",
     "title": "ZIA — Modular AI Assistant Framework",
@@ -85,10 +119,8 @@
       "label": "Learn About ALX",
       "url": "https://zford.dev/products/zia/"
     },
-    "viewLink": "https://github.com/ZFordDev/ZIA",
-    "viewLabel": "View ZIA",
     "image": "/assets/pics/ALX-ZIA.png",
-    "badges": ["AI/ML", "Hardware", "Proprietary"],
+    "badges": ["Flagship","AI/ML", "Hardware", "Proprietary"],
     "description": "ALX‑ZIA is the hardware‑first evolution of the original ZIA framework. Designed for dedicated rental devices, ALX‑ZIA focuses on privacy, modularity, and real‑world utility. While the original ZIA remains open-source, ALX‑ZIA is a proprietary system forming the backbone of the ALX ecosystem.",
     "color": "blue",
     "features": [
@@ -98,18 +130,18 @@
       { "title": "Local + Cloud Hybrid", "description": "Run models locally or route to external providers when needed." },
       { "title": "Config‑Driven Design", "description": "All behavior defined through JSON and YAML configs — no code changes required." }
     ],
-    "techStack": ["Python", "FastAPI", "MQTT", "Embedded Linux"],
+    "techStack": ["Rust", "C++","Python", "FastAPI", "MQTT", "Embedded Linux"],
     "metadata": {
       "license": "Proprietary",
-      "version": "0.1.0",
-      "lastUpdated": "Dec 2025",
+      "version": "0.4.3",
+      "lastUpdated": "Jan 2026",
       "platform": "ALX Hardware"
     },
     "engineeringNotes": "ALX‑ZIA represents the shift from a software‑only prototype to a hardware‑anchored AI system. It inherits routing, persona, and memory concepts from ZIA, but expands them into a distributed, device‑driven architecture. ALX‑ZIA is closed-source and distributed exclusively on ALX rental devices.",
     "roadmap": [
-      { "status": "in-progress", "item": "Core hardware integration" },
-      { "status": "in-progress", "item": "ZIA compatibility bridge" },
-      { "status": "planned", "item": "Sensor and module SDK" },
+      { "status": "completed", "item": "Core hardware integration" },
+      { "status": "completed", "item": "ZIA compatibility bridge" },
+      { "status": "in-progress", "item": "Sensor and module SDK" },
       { "status": "planned", "item": "Local model runner" },
       { "status": "planned", "item": "ALX device dashboard" }
     ]
@@ -133,34 +165,33 @@
     "metadata": {
       "license": "MIT",
       "version": "1.1.0",
-      "lastUpdated": "Dec 2025",
+      "lastUpdated": "Jan 2026",
       "platform": "Windows (current), Cross-platform planned"
     },
-    "engineeringNotes": "NestKey is intentionally simple and transparent, built with native web technologies for maximum auditability. Encryption is handled client-side, ensuring that sensitive data never leaves the user's machine. Cross-platform packaging will be added once OS tooling is ready.",
+    "engineeringNotes": "NestKey is being rebuilt from the ground up using Avalonia and .NET to create a modern, cross‑platform, native‑feeling password vault. The redesign focuses on a cleaner UI, a more robust vault layer, and a hardened security model. This rebuild replaces the original web‑based prototype with a long‑term, maintainable architecture.",
     "roadmap": [
-      { "status": "completed", "item": "Core vault encryption" },
-      { "status": "completed", "item": "Master password system" },
-      { "status": "in-progress", "item": "UI polish and improved UX" },
-      { "status": "planned", "item": "Browser extension for auto-fill" },
-      { "status": "planned", "item": "Cross-platform packaging" }
+      { "status": "in-progress", "item": "Core UI rebuild in Avalonia" },
+      { "status": "planned", "item": "Vault layer implementation (.NET encryption + storage)" },
+      { "status": "planned", "item": "Security hardening and threat‑model review" },
+      { "status": "planned", "item": "Cross‑platform packaging (Windows, Linux, macOS)" },
+      { "status": "planned", "item": "Browser extension for auto‑fill" }
     ]
   },
-
   {
-    "slug": "networking-systems",
-    "title": "Networking & Systems — ZFordDev Infrastructure",
+    "slug": "infrastructure",
+    "title": "ZetoLabs Infrastructure — Internal Systems",
     "show": true,
-    "repo": "/",
+    "repo": null,
     "image": "/assets/pics/infrastructure.png",
-    "badges": ["Infrastructure", "Internal", "Systems Engineering"],
-    "description": "The internal infrastructure powering ZFordDev: secure networking, home-lab servers, API tooling, and a disciplined deployment workflow designed for reliability, transparency, and future scalability.",
+    "badges": ["Internal", "Infrastructure", "Systems Engineering"],
+    "description": "The internal infrastructure that powers the ZetoLabs ecosystem — secure servers, isolated networks, deployment tooling, and a disciplined engineering workflow designed for reliability and long‑term scalability.",
     "color": "cyan",
     "features": [
-      { "title": "Secure Home-Lab Architecture", "description": "Ubuntu 24.04 LTS servers running behind managed switches, custom firewall rules, and isolated virtual networks." },
-      { "title": "API & Internal Tooling (ZIA)", "description": "Local-first API services powering automation, client workflows, and internal dashboards." },
-      { "title": "Controlled Deployment Pipeline", "description": "Git → Syncthing → Server workflow ensuring only reviewed, approved files reach production." },
-      { "title": "Monitoring & Uptime", "description": "Uptime Kuma dashboards, Nginx health checks, and network isolation for reliability." },
-      { "title": "Future Production Model", "description": "Dedicated Git control machines + redundant hosting servers for scalable client deployments." }
+      { "title": "Hardened Home‑Lab Architecture", "description": "Ubuntu 24.04 LTS servers running behind managed switches, strict firewall rules, and isolated VLANs." },
+      { "title": "Internal Automation Layer", "description": "Local‑first API tooling and automation services used for internal workflows and development pipelines." },
+      { "title": "Controlled Deployment Workflow", "description": "A Git‑driven pipeline with staged syncing and manual approval to ensure safe, predictable deployments." },
+      { "title": "Monitoring & Reliability", "description": "Uptime dashboards, Nginx health checks, and network isolation for consistent, observable performance." },
+      { "title": "Future Production Model", "description": "Dedicated Git control machines and redundant hosting servers planned for scalable client‑grade deployments." }
     ],
     "techStack": [
       "Ubuntu Server 24.04 LTS",
@@ -170,7 +201,7 @@
       "WireGuard",
       "Managed Switches",
       "Hyper‑V",
-      "ZIA API (Internal)"
+      "Internal API Services"
     ],
     "metadata": {
       "license": "Proprietary",
@@ -178,12 +209,12 @@
       "lastUpdated": "Dec 2025",
       "platform": "Home‑Lab + Virtualized Linux Servers"
     },
-    "engineeringNotes": "ZFordDevs infrastructure is built with a security-first mindset: isolated networks, hardened SSH, strict firewall rules, and a controlled deployment pipeline. All systems are documented as credibility projects, ensuring repeatability and professional optics as the company scales.",
+    "engineeringNotes": "ZetoLabs’ infrastructure is built with a security‑first mindset: isolated networks, hardened SSH, strict firewall rules, and a controlled deployment pipeline. These systems exist to support internal development, testing, and future SaaS operations — forming the backbone of the studio’s technical reliability.",
     "roadmap": [
       { "status": "completed", "item": "Ubuntu server deployment + hardened SSH" },
       { "status": "completed", "item": "Git → Syncthing → Server workflow" },
       { "status": "completed", "item": "Monitoring + uptime dashboard" },
-      { "status": "in-progress", "item": "ZIA API expansion for automation" },
+      { "status": "in-progress", "item": "Internal automation API expansion" },
       { "status": "planned", "item": "Dedicated Git control machines" },
       { "status": "planned", "item": "Redundant production servers" },
       { "status": "planned", "item": "Multi‑site failover model" }
